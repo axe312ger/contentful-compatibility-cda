@@ -6,11 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "start-server-and-test start http://localhost:3000 test:execute",
+    "test:execute": "jest"
   },
   "dependencies": {
+    "contentful": "^10.8.10",
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "selenium-webdriver": "4.1.2",
+    "start-server-and-test": "^2.0.3"
   }
 }
