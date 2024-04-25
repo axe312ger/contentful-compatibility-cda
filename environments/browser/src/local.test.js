@@ -17,7 +17,6 @@ describe("contentful.js execution test", () => {
 
   test("local server test", async () => {
     await driver.get("http://bs-local.com:1234/");
-    // http://bs-local.com:45454/
 
     // Check HTML title
     const title = await driver.getTitle();

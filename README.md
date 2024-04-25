@@ -4,21 +4,19 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
 
 ## We should ensure the plugin works in all common JS environments:
 
-- node - CJS
-- node - ESM
-- node - TS
-- browsers and mobile devices -> browser bundle
-  - https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs
-  - OR via Cypress / Playwright (?) 
+- ✅ node - CJS
+- ✅ node - ESM
+- ✅ node - TS (ESM + CJS)
+- ✅ browsers and mobile devices -> using browser bundle 
+  - via selenium
   - iOS / android / mobile!
+- ✅ Gastby
+- ✅ Nextjs
 - bundlers - what should we do? only bundle? or also test if a website with the bundle can be run? at least on headless chrome locally? playwright?
   - Webpack
   - rollup
-- Gastby
-  - Gatsby TS
-- Nextjs
-  - Nextjs TS
-
+  - vite
+  - ✅ parcel (we already have it via browsers test)
 - Nuxt
 - Svelte
 - Angular
