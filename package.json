@@ -1,0 +1,25 @@
+{
+  "name": "research-esm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "We need to find a way to export our library as CJS, ESM and to the browser. Additionally, there are now dependencies that are ONLY available in ESM syntax, potentially breaking CJS only environments.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start --workspaces",
+    "_postinstall": "yarn link contentful contentful-sdk-core",
+    "cleanup": "rm -rf ./environments/*/node_modules ./node_modules"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./environments/*"
+  ],
+  "dependencies": {
+    "contentful": "^10.0.0",
+    "contentful-sdk-core": "^8.0.0"
+  }
+}

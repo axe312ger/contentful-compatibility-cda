@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@contentful/rich-text-types": "^16.2.0",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-contentful": "^8.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "gatsby-transformer-sqip": "^5.13.1",
+    "modern-normalize": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@cypress/snapshot": "^2.1.7",
+    "@simonsmith/cypress-image-snapshot": "^6.1.1",
+    "@types/simonsmith__cypress-image-snapshot": "npm:@types/cypress-image-snapshot",
+    "cross-env": "^7.0.3",
+    "cypress": "^12.16.0",
+    "gatsby-cypress": "next",
+    "prettier": "^2.8.8",
+    "srcset": "^5.0.0",
+    "start-server-and-test": "^2.0.3",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run clean && npm run build && npm run start-server-and-test",
+    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "cross-env CYPRESS_SUPPORT=y npm run build && npm run start-server-and-test",
+    "start-server-and-test": "start-server-and-test serve http://localhost:9000 cy:run",
+    "serve": "gatsby serve",
+    "cy:open": "cypress open --browser chrome --e2e",
+    "cy:run": "cypress run --browser chrome --e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
