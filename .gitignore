@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,windows,linux,macos,gatsby,nextjs
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,windows,linux,macos,gatsby,nextjs
 
+log
+
 ### Gatsby ###
 node_modules/
 
