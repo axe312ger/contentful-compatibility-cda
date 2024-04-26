@@ -15116,6 +15116,11 @@ typescript@^5, typescript@^5.3.3:
   resolved "http://localhost:4873/typescript/-/typescript-5.4.4.tgz"
   integrity sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==
 
+typescript@^5.2.2:
+  version "5.4.5"
+  resolved "http://localhost:4873/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
+  integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
+
 ua-parser-js@^1.0.35:
   version "1.0.37"
   resolved "http://localhost:4873/ua-parser-js/-/ua-parser-js-1.0.37.tgz"

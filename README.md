@@ -12,12 +12,12 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
   - iOS / android / mobile!
 - ✅ Gastby
 - ✅ Nextjs
-  - ts!
+  - ✅ ts!
 - bundlers - what should we do? only bundle? or also test if a website with the bundle can be run? at least on headless chrome locally? playwright?
   - ✅ Webpack
   - ✅ rollup
   - ✅ vite
-    - ts
+    - ✅ ts
   - ✅ parcel (we already have it via browsers test)
 - Nuxt
 - Svelte
