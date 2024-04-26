@@ -1,0 +1,47 @@
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { useEffect, useState } from "react";
+
+import { createClient } from "contentful";
+
+export default function App() {
+  const [result, setResult] = useState("Loading...");
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const client = createClient({
+          // This space is for testing purposes only.
+          // Never store your Contentful credentials in your projects config file.
+          // Use: https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
+          space: `k8iqpp6u0ior`,
+          accessToken: `hO_7N0bLaCJFbu5nL3QVekwNeB_TNtg6tOCB_9qzKUw`,
+        });
+
+        await client.getEntries();
+        setResult(`✅ Success!`);
+      } catch (err) {
+        setResult(`🚫 Error: ${err.message}`);
+        throw err;
+      }
+    };
+
+    load();
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <Text id="loading-entries">{result}</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});

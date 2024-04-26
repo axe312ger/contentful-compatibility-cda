@@ -21,7 +21,7 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
   - ✅ parcel (we already have it via browsers test)
 - ✅ Nuxt
 - ✅ Svelte
-- Angular
+- ✅ Angular
 - React native
 
 ## Assumptions
