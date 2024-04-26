@@ -15,6 +15,15 @@ describe("contentful.js execution test", () => {
   test("local server test", async () => {
     await driver.get("http://localhost:3000/");
 
+    // Check for loading Client
+    const clientResult = await driver.findElement(By.id("client"));
+    const clientResultTextLoading = await clientResult.getText();
+    assert.strictEqual(
+      clientResultTextLoading,
+      "Loading...",
+      "Client result text should not be rendered initially."
+    );
+
     // Check for success SSR
     const serverResult = await driver.findElement(By.id("server"));
     const serverResultText = await serverResult.getText();
@@ -28,15 +37,7 @@ describe("contentful.js execution test", () => {
       "Server result text indicates an error."
     );
 
-    // Check for success Client
-    const clientResult = await driver.findElement(By.id("client"));
-    const clientResultTextLoading = await clientResult.getText();
-    assert.strictEqual(
-      clientResultTextLoading,
-      "Loading...",
-      "Client result text should not be rendered initially."
-    );
-
+    // Check for success loading Client
     await driver.sleep(1000);
 
     const clientResultText = await clientResult.getText();

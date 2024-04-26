@@ -8,7 +8,7 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
 - ✅ node - ESM
 - ✅ node - TS (ESM + CJS)
 - ✅ browsers and mobile devices -> using browser bundle 
-  - via selenium
+  - ✅ via selenium
   - iOS / android / mobile!
 - ✅ Gastby
 - ✅ Nextjs

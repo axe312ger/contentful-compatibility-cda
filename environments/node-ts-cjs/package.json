@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist && ts-node ."
+    "test": "tsc && node dist && ts-node ."
   },
   "keywords": [],
   "author": "",
