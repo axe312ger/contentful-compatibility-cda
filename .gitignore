@@ -4,6 +4,8 @@
 ### Gatsby ###
 node_modules/
 
+environments/*/yarn.lock
+
 .cache/
 public
 
