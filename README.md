@@ -22,7 +22,7 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
 - ✅ Nuxt
 - ✅ Svelte
 - ✅ Angular
-- React native
+- ✅ React native
 
 ## Assumptions
 
