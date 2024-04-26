@@ -9,7 +9,7 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
 - ✅ node - TS (ESM + CJS)
 - ✅ browsers and mobile devices -> using browser bundle 
   - ✅ via selenium
-  - iOS / android / mobile!
+  - ✅ iOS / android / mobile!
 - ✅ Gastby
 - ✅ Nextjs
   - ✅ ts!
@@ -19,8 +19,8 @@ We need to find a way to export our library as CJS, ESM and to the browser. Addi
   - ✅ vite
     - ✅ ts
   - ✅ parcel (we already have it via browsers test)
-- Nuxt
-- Svelte
+- ✅ Nuxt
+- ✅ Svelte
 - Angular
 - React native
 
