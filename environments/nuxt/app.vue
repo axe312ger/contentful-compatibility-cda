@@ -1,5 +1,5 @@
 <script setup>
-import contentful from "contentful";
+import * as contentful from "contentful";
 
 let result = "Loading...";
 try {

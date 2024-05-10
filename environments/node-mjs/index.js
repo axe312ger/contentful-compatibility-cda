@@ -1,4 +1,4 @@
-import contentful from "contentful";
+import * as contentful from "contentful";
 
 const client = contentful.createClient({
   // This space is for testing purposes only.

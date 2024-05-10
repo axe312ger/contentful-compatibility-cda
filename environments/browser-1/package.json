@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp ./node_modules/contentful/dist/contentful.browser.min.js ./src && npm run clean",
+    "postinstall": "cp ../../node_modules/contentful/dist/contentful.browser.min.js ./src && npm run clean",
     "start": "parcel ./src/index.html",
     "clean": "rm -rf dist .parcel-cache",
     "test": "start-server-and-test start http://localhost:1234 test:execute",

@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node run-tests.js",
-    "_postinstall": "yarn link contentful contentful-sdk-core",
-    "cleanup": "rm -rf ./environments/*/node_modules ./node_modules"
+    "cleanup": "rm -rf ./environments/*/node_modules ./node_modules",
+    "postinstall": "watchman watch-del ."
   },
   "engines": {
     "node": "18"
@@ -19,7 +19,10 @@
     "./environments/*"
   ],
   "dependencies": {
-    "contentful": "^10.0.0",
+    "contentful": "^11.0.0-alpha.2",
     "contentful-sdk-core": "^8.0.0"
+  },
+  "resolutions": {
+    "contentful": "11.0.0-alpha.2"
   }
 }

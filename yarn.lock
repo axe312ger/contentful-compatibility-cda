@@ -9476,25 +9476,14 @@ content-type@~1.0.4, content-type@~1.0.5:
   resolved "http://localhost:4873/content-type/-/content-type-1.0.5.tgz"
   integrity sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==
 
-contentful-resolve-response@^1.3.12, contentful-resolve-response@^1.8.1:
+contentful-resolve-response@^1.8.1:
   version "1.8.1"
   resolved "http://localhost:4873/contentful-resolve-response/-/contentful-resolve-response-1.8.1.tgz"
   integrity sha512-VXGK2c8dBIGcRCknqudKmkDr2PzsUYfjLN6hhx71T09UzoXOdA/c0kfDhsf/BBCBWPWcLaUgaJEFU0lCo45TSg==
   dependencies:
     fast-copy "^2.1.7"
 
-contentful-sdk-core@^7.0.5:
-  version "7.1.0"
-  resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-7.1.0.tgz"
-  integrity sha512-RzTPnRsbCdVAhyka3wa9sDsAu9YsxoerNgaMqd63Ljb7qpG2zkdHcP7NTfyIbuHDJNJdAQdifyafxfEEwP+q/w==
-  dependencies:
-    fast-copy "^2.1.7"
-    lodash.isplainobject "^4.0.6"
-    lodash.isstring "^4.0.1"
-    p-throttle "^4.1.1"
-    qs "^6.9.4"
-
-contentful-sdk-core@^8.0.0, contentful-sdk-core@^8.1.0:
+contentful-sdk-core@^8.0.0:
   version "8.1.2"
   resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-8.1.2.tgz"
   integrity sha512-XZvX2JMJF4YiICXLrHFv59KBHaQJ6ElqAP8gSNgnCu4x+pPG7Y1bC2JMNOiyAgJuGQGVUOcNZ5PmK+tsNEayYw==
@@ -9505,41 +9494,27 @@ contentful-sdk-core@^8.0.0, contentful-sdk-core@^8.1.0:
     p-throttle "^4.1.1"
     qs "^6.11.2"
 
-contentful@^10.0.0:
-  version "10.8.7"
-  resolved "http://localhost:4873/contentful/-/contentful-10.8.7.tgz"
-  integrity sha512-BkHspZUmeaqCkJXljBJBZ+WnMVU/3N1rYIxVuwH3X/0Q88zF8hb02dsZupmecm5LOHSYWg7lKKrbKit6Q0JL2A==
+contentful-sdk-core@^9.0.0-alpha.0:
+  version "9.0.0-alpha.0"
+  resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-9.0.0-alpha.0.tgz#83a334c0dcad67aed9023fd337ee4547ba3c37d2"
+  integrity sha512-98XCco7H1vcuwjTeBnH++ea+DZpajkra8RphFufi8xhs6uTdL57oWBnlfiJJWlm+OfSRZelwUL3VIgRE4HwSdQ==
+  dependencies:
+    fast-copy "^3.0.2"
+    lodash "^4.17.21"
+    p-throttle "^6.1.0"
+    qs "^6.12.0"
+
+contentful@11.0.0-alpha.2, contentful@^10.8.10, contentful@^11.0.0-alpha.2, contentful@^9.3.5:
+  version "11.0.0-alpha.2"
+  resolved "http://localhost:4873/contentful/-/contentful-11.0.0-alpha.2.tgz#ca9acae56a5d48f6af31a7c9241fe8d08dcaa9b7"
+  integrity sha512-CVCbA5LsUqYBq3i72/2XXCU5e55Vmzcu+89sIg1YXqFZRtZA97tDss87mZGpiSThaxMFb6QjuigCDsWw9e4ETw==
   dependencies:
     "@contentful/rich-text-types" "^16.0.2"
     axios "^1.6.7"
     contentful-resolve-response "^1.8.1"
-    contentful-sdk-core "^8.1.0"
+    contentful-sdk-core "^9.0.0-alpha.0"
     json-stringify-safe "^5.0.1"
     type-fest "^4.0.0"
-
-contentful@^10.8.10:
-  version "10.8.10"
-  resolved "https://registry.npmjs.org/contentful/-/contentful-10.8.10.tgz"
-  integrity sha512-2QnMllW9alHrorHX3Q8bjaMLhoVYChikjDglWta92zxqjMHsgOyPCtq+wj0ojX4tgHNvOAS9iYOpxypY7Cf7Fw==
-  dependencies:
-    "@contentful/rich-text-types" "^16.0.2"
-    axios "^1.6.7"
-    contentful-resolve-response "^1.8.1"
-    contentful-sdk-core "^8.1.0"
-    json-stringify-safe "^5.0.1"
-    type-fest "^4.0.0"
-
-contentful@^9.3.5:
-  version "9.3.6"
-  resolved "http://localhost:4873/contentful/-/contentful-9.3.6.tgz"
-  integrity sha512-RJZ+CUh2fC6OQL89XHCSVsj1AQxqscgq+9wDdj+aWd67aZWzXnanKFVB5MsICM6y49D6XX4pf88d2mkyw74qKA==
-  dependencies:
-    "@contentful/rich-text-types" "^16.0.2"
-    axios "^1.6.7"
-    contentful-resolve-response "^1.3.12"
-    contentful-sdk-core "^7.0.5"
-    fast-copy "^2.1.7"
-    json-stringify-safe "^5.0.1"
 
 convert-hrtime@^3.0.0:
   version "3.0.0"
@@ -11796,6 +11771,11 @@ fast-copy@^2.1.7:
   version "2.1.7"
   resolved "http://localhost:4873/fast-copy/-/fast-copy-2.1.7.tgz"
   integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
+
+fast-copy@^3.0.2:
+  version "3.0.2"
+  resolved "http://localhost:4873/fast-copy/-/fast-copy-3.0.2.tgz#59c68f59ccbcac82050ba992e0d5c389097c9d35"
+  integrity sha512-dl0O9Vhju8IrcLndv2eU4ldt1ftXMqqfgN4H1cpmGV7P6jeB9FwpN9a2c8DPGE1Ys88rNUJVYDHq73CGAGOPfQ==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -18518,6 +18498,11 @@ p-throttle@^4.1.1:
   resolved "http://localhost:4873/p-throttle/-/p-throttle-4.1.1.tgz"
   integrity sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==
 
+p-throttle@^6.1.0:
+  version "6.1.0"
+  resolved "http://localhost:4873/p-throttle/-/p-throttle-6.1.0.tgz#6bed43e9aa8e715abc1da1097279a7c16c077747"
+  integrity sha512-eQMdGTxk2+047La67wefUtt0tEHh7D+C8Jl7QXoFCuIiNYeQ9zWs2AZiJdIAs72rSXZ06t11me2bgalRNdy3SQ==
+
 p-timeout@^3.2.0:
   version "3.2.0"
   resolved "http://localhost:4873/p-timeout/-/p-timeout-3.2.0.tgz"
@@ -19860,17 +19845,10 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-qs@^6.11.2, qs@^6.7.0:
+qs@^6.11.2, qs@^6.12.0, qs@^6.7.0:
   version "6.12.1"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.12.1.tgz"
+  resolved "http://localhost:4873/qs/-/qs-6.12.1.tgz#39422111ca7cbdb70425541cba20c7d7b216599a"
   integrity sha512-zWmv4RSuB9r2mYQw3zxQuHWeU+42aKi1wWig/j4ele4ygELZ7PEO6MM7rim9oAQH2A5MWfsAVf/jPvTPgCbvUQ==
-  dependencies:
-    side-channel "^1.0.6"
-
-qs@^6.9.4:
-  version "6.12.0"
-  resolved "http://localhost:4873/qs/-/qs-6.12.0.tgz"
-  integrity sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==
   dependencies:
     side-channel "^1.0.6"
 

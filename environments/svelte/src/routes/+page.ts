@@ -1,4 +1,4 @@
-import contentful from "contentful";
+import * as contentful from "contentful";
 
 /** @type {import('./$types').PageLoad} */ export async function load({
   params,
