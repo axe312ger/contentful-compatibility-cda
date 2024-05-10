@@ -5,7 +5,7 @@
   "description": "We need to find a way to export our library as CJS, ESM and to the browser. Additionally, there are now dependencies that are ONLY available in ESM syntax, potentially breaking CJS only environments.",
   "main": "index.js",
   "scripts": {
-    "start": "npm test --workspaces",
+    "start": "node run-tests.js",
     "_postinstall": "yarn link contentful contentful-sdk-core",
     "cleanup": "rm -rf ./environments/*/node_modules ./node_modules"
   },

@@ -32,7 +32,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "npm run build"
+    "test": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
