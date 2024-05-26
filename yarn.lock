@@ -2369,14 +2369,6 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.6.0.tgz"
   integrity sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==
 
-"@contentful/content-source-maps@^0.5.0":
-  version "0.5.0"
-  resolved "http://localhost:4873/@contentful/content-source-maps/-/content-source-maps-0.5.0.tgz#3561c705f49ec3411aa90ff8a3606ceb5da1fc5b"
-  integrity sha512-Ui14m5QvgFWteAXsv5pmFtbm2deGUJrn1WPHoBa79SK3Z3nV47wQb3/aDZhnXushgpJlk2HmH32Fda/0XZqq1w==
-  dependencies:
-    "@vercel/stega" "^0.1.2"
-    json-pointer "^0.6.2"
-
 "@contentful/rich-text-react-renderer@^15.17.0":
   version "15.21.0"
   resolved "http://localhost:4873/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.21.0.tgz#ebcd520d5204bce31ac76acea16b860d581ecf60"
@@ -7268,11 +7260,6 @@
     node-gyp-build "^4.2.2"
     resolve-from "^5.0.0"
 
-"@vercel/stega@^0.1.2":
-  version "0.1.2"
-  resolved "http://localhost:4873/@vercel/stega/-/stega-0.1.2.tgz#0c20c5c9419c4288b1de58a64b5f9f26c763b25f"
-  integrity sha512-P7mafQXjkrsoyTRppnt0N21udKS9wUmLXHRyP9saLXLHw32j/FgUJ3FscSWgvSqRs4cj7wKZtwqJEvWJ2jbGmA==
-
 "@vercel/webpack-asset-relocator-loader@1.7.3":
   version "1.7.3"
   resolved "http://localhost:4873/@vercel/webpack-asset-relocator-loader/-/webpack-asset-relocator-loader-1.7.3.tgz#e65ca1fd9feb045039788f9b4710e5acc84b01b0"
@@ -10037,25 +10024,14 @@ content-type@~1.0.4, content-type@~1.0.5:
   resolved "http://localhost:4873/content-type/-/content-type-1.0.5.tgz#8b773162656d1d1086784c8f23a54ce6d73d7918"
   integrity sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==
 
-contentful-resolve-response@^1.3.12, contentful-resolve-response@^1.8.1:
+contentful-resolve-response@^1.8.1:
   version "1.8.1"
   resolved "http://localhost:4873/contentful-resolve-response/-/contentful-resolve-response-1.8.1.tgz#b44ff13e12fab7deb00ef6216d8a7171bdda0395"
   integrity sha512-VXGK2c8dBIGcRCknqudKmkDr2PzsUYfjLN6hhx71T09UzoXOdA/c0kfDhsf/BBCBWPWcLaUgaJEFU0lCo45TSg==
   dependencies:
     fast-copy "^2.1.7"
 
-contentful-sdk-core@^7.0.5:
-  version "7.1.0"
-  resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-7.1.0.tgz#74d3ef8b167c5ac390fbb5db2d6e433731e05115"
-  integrity sha512-RzTPnRsbCdVAhyka3wa9sDsAu9YsxoerNgaMqd63Ljb7qpG2zkdHcP7NTfyIbuHDJNJdAQdifyafxfEEwP+q/w==
-  dependencies:
-    fast-copy "^2.1.7"
-    lodash.isplainobject "^4.0.6"
-    lodash.isstring "^4.0.1"
-    p-throttle "^4.1.1"
-    qs "^6.9.4"
-
-contentful-sdk-core@^8.0.0, contentful-sdk-core@^8.1.0:
+contentful-sdk-core@^8.0.0:
   version "8.1.3"
   resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-8.1.3.tgz#c6c74cea732cd0bf395cc39aac52aa11bb388382"
   integrity sha512-jAek5yGhpk3OJC+lWeq4AZIHO3lxELNMyETDU0fYkPnRS4wHCjbNv5cSk84Rbo7NyH5CkfgzGszvc0GDSXtg0w==
@@ -10076,20 +10052,7 @@ contentful-sdk-core@^9.0.0-alpha.0:
     p-throttle "^6.1.0"
     qs "^6.12.0"
 
-contentful@^10.8.10:
-  version "10.11.3"
-  resolved "http://localhost:4873/contentful/-/contentful-10.11.3.tgz#9ca638746b058dfcd40ed894af305c5e85e33d4a"
-  integrity sha512-sBI2fCfw101JOSJvjVS2rBpP3HwGl3S2lQPhYwdKjrLepktdJs+gxEyGnMWhOJ36Di5aObIrc0PSA4jAftDB/Q==
-  dependencies:
-    "@contentful/content-source-maps" "^0.5.0"
-    "@contentful/rich-text-types" "^16.0.2"
-    axios "^1.6.7"
-    contentful-resolve-response "^1.8.1"
-    contentful-sdk-core "^8.1.0"
-    json-stringify-safe "^5.0.1"
-    type-fest "^4.0.0"
-
-contentful@^11.0.0-alpha.2:
+contentful@11.0.0-alpha.2, contentful@^10.8.10, contentful@^11.0.0-alpha.2:
   version "11.0.0-alpha.2"
   resolved "http://localhost:4873/contentful/-/contentful-11.0.0-alpha.2.tgz#ca9acae56a5d48f6af31a7c9241fe8d08dcaa9b7"
   integrity sha512-CVCbA5LsUqYBq3i72/2XXCU5e55Vmzcu+89sIg1YXqFZRtZA97tDss87mZGpiSThaxMFb6QjuigCDsWw9e4ETw==
@@ -10100,18 +10063,6 @@ contentful@^11.0.0-alpha.2:
     contentful-sdk-core "^9.0.0-alpha.0"
     json-stringify-safe "^5.0.1"
     type-fest "^4.0.0"
-
-contentful@^9.3.5:
-  version "9.3.6"
-  resolved "http://localhost:4873/contentful/-/contentful-9.3.6.tgz#b2c9b7099b7f2b5ae7868dbbf894bb24e47ce449"
-  integrity sha512-RJZ+CUh2fC6OQL89XHCSVsj1AQxqscgq+9wDdj+aWd67aZWzXnanKFVB5MsICM6y49D6XX4pf88d2mkyw74qKA==
-  dependencies:
-    "@contentful/rich-text-types" "^16.0.2"
-    axios "^1.6.7"
-    contentful-resolve-response "^1.3.12"
-    contentful-sdk-core "^7.0.5"
-    fast-copy "^2.1.7"
-    json-stringify-safe "^5.0.1"
 
 convert-hrtime@^3.0.0:
   version "3.0.0"
@@ -12409,7 +12360,7 @@ fastest-levenshtein@^1.0.12, fastest-levenshtein@^1.0.16:
   resolved "http://localhost:4873/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz"
   integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
 
-fastq@^1.15.0, fastq@^1.6.0:
+fastq@^1.15.0, fastq@^1.16.0, fastq@^1.6.0:
   version "1.17.1"
   resolved "http://localhost:4873/fastq/-/fastq-1.17.1.tgz#2a523f07a4e7b1e81a42b91b8bf2254107753b47"
   integrity sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==
@@ -12692,11 +12643,6 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
-foreach@^2.0.4:
-  version "2.0.6"
-  resolved "http://localhost:4873/foreach/-/foreach-2.0.6.tgz#87bcc8a1a0e74000ff2bf9802110708cfb02eb6e"
-  integrity sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==
-
 foreground-child@^3.1.0:
   version "3.1.1"
   resolved "http://localhost:4873/foreground-child/-/foreground-child-3.1.1.tgz"
@@ -12952,6 +12898,28 @@ gatsby-core-utils@^4.13.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^4.14.0-next.2:
+  version "4.14.0-next.2"
+  resolved "http://localhost:4873/gatsby-core-utils/-/gatsby-core-utils-4.14.0-next.2.tgz#75b2dd5e85cb257b83b61ba2c1613b8ff992d7e9"
+  integrity sha512-GUBz6z348T6/Z4PReD5gNcXm0LhoO2xcASE0VvXxrhO/1GlqhDHfqIarAWEM8y4mvhL2HeTXs/7yWghx4Eu/UQ==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.15.0"
+    file-type "^16.5.4"
+    fs-extra "^11.2.0"
+    got "^11.8.6"
+    hash-wasm "^4.11.0"
+    import-from "^4.0.0"
+    lmdb "2.5.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^3.13.1:
   version "3.13.1"
   resolved "http://localhost:4873/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-3.13.1.tgz#906f5b75f9c01ca5cd836de6cda60e376126e3e2"
@@ -13090,6 +13058,21 @@ gatsby-plugin-utils@^4.13.1:
     joi "^17.9.2"
     mime "^3.0.0"
 
+gatsby-plugin-utils@^4.14.0-next.2:
+  version "4.14.0-next.2"
+  resolved "http://localhost:4873/gatsby-plugin-utils/-/gatsby-plugin-utils-4.14.0-next.2.tgz#beb010f938366f7b15b60270f334348634fb92bb"
+  integrity sha512-AfdDl745v64cge0C+B1fjsxyz5vJ3pFRc6/l1Ao/CrrAcIGnve35XYc6ukEJpFgqK2kGB+YggU6ImMCLN3VXJw==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    fastq "^1.16.0"
+    fs-extra "^11.2.0"
+    gatsby-core-utils "^4.14.0-next.2"
+    gatsby-sharp "^1.14.0-next.0"
+    graphql-compose "^9.0.10"
+    import-from "^4.0.0"
+    joi "^17.11.0"
+    mime "^3.0.0"
+
 gatsby-react-router-scroll@^6.13.1:
   version "6.13.1"
   resolved "http://localhost:4873/gatsby-react-router-scroll/-/gatsby-react-router-scroll-6.13.1.tgz#b20d492a1fc0ac4f31a0435452b06e22e8cb6c41"
@@ -13110,10 +13093,17 @@ gatsby-sharp@^1.13.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@^8.13.1:
-  version "8.13.2"
-  resolved "http://localhost:4873/gatsby-source-contentful/-/gatsby-source-contentful-8.13.2.tgz#44902d2f11b4bed85b46cc9ae6d7e814cd9aad4e"
-  integrity sha512-UgIZEvWXT6UtEDxUyvanxTZJa9nDj8DoaYnjCi7vuRdGMa/WU6ixdklJQKYB3aDzS+gYZ8st0vHtEZdRQxhk7Q==
+gatsby-sharp@^1.14.0-next.0:
+  version "1.14.0-next.0"
+  resolved "http://localhost:4873/gatsby-sharp/-/gatsby-sharp-1.14.0-next.0.tgz#2998331522c430d5c74ae1d6a60e6c0a47212bda"
+  integrity sha512-ZzztkJefgkwezHMB6B+KRsrB9FzNC0BX1wpSEh/nEIRepezLhDQIqYuTjJTwAVL0evCPvjOs5RTHFx1vQHPoVg==
+  dependencies:
+    sharp "^0.32.6"
+
+gatsby-source-contentful@8.14.0-next.4:
+  version "8.14.0-next.4"
+  resolved "http://localhost:4873/gatsby-source-contentful/-/gatsby-source-contentful-8.14.0-next.4.tgz#cc05b36084e6cd88b4179ace8fd1729ccfbd5f9c"
+  integrity sha512-t6YbYZGrPeQ5LFZw8WVdJBLcsxvTTcYEjj1yECtthi7QKAHZXrcp1E+gT74xAVzuiQBwQTPG9Box8/TH86CzGQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@contentful/rich-text-react-renderer" "^15.17.0"
@@ -13122,11 +13112,11 @@ gatsby-source-contentful@^8.13.1:
     "@vercel/fetch-retry" "^5.1.3"
     chalk "^4.1.2"
     common-tags "^1.8.2"
-    contentful "^9.3.5"
-    fs-extra "^11.1.1"
-    gatsby-core-utils "^4.13.1"
-    gatsby-plugin-utils "^4.13.1"
-    gatsby-source-filesystem "^5.13.1"
+    contentful "^11.0.0-alpha.2"
+    fs-extra "^11.2.0"
+    gatsby-core-utils "^4.14.0-next.2"
+    gatsby-plugin-utils "^4.14.0-next.2"
+    gatsby-source-filesystem "^5.14.0-next.2"
     is-online "^10.0.0"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.21"
@@ -13134,16 +13124,16 @@ gatsby-source-contentful@^8.13.1:
     semver "^7.5.3"
     url "^0.11.1"
 
-gatsby-source-filesystem@^5.13.1:
-  version "5.13.1"
-  resolved "http://localhost:4873/gatsby-source-filesystem/-/gatsby-source-filesystem-5.13.1.tgz#1aad8f969fbfd4efe6f7cfcd8542253f54fdbd8a"
-  integrity sha512-nFWzOBpi84nDeVNeO7bpKL9mVYMl1tfjJmE5l868YATFShGzZnA6qMd200XCsf78PexZHAiV/P1MlsyKqjJduA==
+gatsby-source-filesystem@^5.14.0-next.2:
+  version "5.14.0-next.2"
+  resolved "http://localhost:4873/gatsby-source-filesystem/-/gatsby-source-filesystem-5.14.0-next.2.tgz#b4adbb5f96dcd2786706fb1c067ca4e48777c8d0"
+  integrity sha512-UoygxdgduCP6SWoWsTJHZpvPLCQVnz0/P784FC+DQGkKBGEA1DhyT00nUDnvGJkKiitYrC3x55wu1ZA8zedyqg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
-    fs-extra "^11.1.1"
-    gatsby-core-utils "^4.13.1"
+    fs-extra "^11.2.0"
+    gatsby-core-utils "^4.14.0-next.2"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
@@ -14054,7 +14044,7 @@ hash-sum@^2.0.0:
   resolved "http://localhost:4873/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
 
-hash-wasm@^4.9.0:
+hash-wasm@^4.11.0, hash-wasm@^4.9.0:
   version "4.11.0"
   resolved "http://localhost:4873/hash-wasm/-/hash-wasm-4.11.0.tgz#7d1479b114c82e48498fdb1d2462a687d00386d5"
   integrity sha512-HVusNXlVqHe0fzIzdQOGolnFN6mX/fqcrSAOcTBXdvzrXVHwTz11vXeKRmkR5gTuwVpvHZEIyKoePDvuAR+XwQ==
@@ -16192,13 +16182,6 @@ json-parse-even-better-errors@^3.0.0:
   version "3.0.1"
   resolved "http://localhost:4873/json-parse-even-better-errors/-/json-parse-even-better-errors-3.0.1.tgz"
   integrity sha512-aatBvbL26wVUCLmbWdCpeu9iF5wOyWpagiKkInA+kfws3sWdBrTnsvN2CKcyCYyUrc7rebNBlK6+kteg7ksecg==
-
-json-pointer@^0.6.2:
-  version "0.6.2"
-  resolved "http://localhost:4873/json-pointer/-/json-pointer-0.6.2.tgz#f97bd7550be5e9ea901f8c9264c9d436a22a93cd"
-  integrity sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==
-  dependencies:
-    foreach "^2.0.4"
 
 json-schema-deref-sync@^0.13.0:
   version "0.13.0"
@@ -20429,7 +20412,7 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-qs@^6.11.2, qs@^6.12.0, qs@^6.7.0, qs@^6.9.4:
+qs@^6.11.2, qs@^6.12.0, qs@^6.7.0:
   version "6.12.1"
   resolved "http://localhost:4873/qs/-/qs-6.12.1.tgz#39422111ca7cbdb70425541cba20c7d7b216599a"
   integrity sha512-zWmv4RSuB9r2mYQw3zxQuHWeU+42aKi1wWig/j4ele4ygELZ7PEO6MM7rim9oAQH2A5MWfsAVf/jPvTPgCbvUQ==
