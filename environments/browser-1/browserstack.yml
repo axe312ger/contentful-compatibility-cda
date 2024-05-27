@@ -37,7 +37,7 @@ platforms:
     browserName: chromium
     realMobile: true
     osVersion: 17
-  - deviceName: iPhone 13
+  - deviceName: iPhone 15
     browserName: Safari
     realMobile: true
     osVersion: 16
