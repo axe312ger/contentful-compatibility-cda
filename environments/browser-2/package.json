@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "cp ../../node_modules/contentful/dist/contentful.browser.min.js ./src && npm run clean",
-    "start": "parcel ./src/index.html",
+    "start": "parcel ./src/index.html --no-cache",
     "clean": "rm -rf dist .parcel-cache",
-    "test": "npm run clean && npm i && start-server-and-test start http://localhost:1234 test:execute",
+    "test": "npm run clean && start-server-and-test start http://localhost:1234 test:execute",
     "test:execute": "browserstack-node-sdk jest src/local.test.js"
   },
   "keywords": [],
@@ -23,6 +23,6 @@
     "start-server-and-test": "^2.0.3"
   },
   "dependencies": {
-    "contentful": "^10.8.10"
+    "contentful": "11.0.0-alpha.8"
   }
 }

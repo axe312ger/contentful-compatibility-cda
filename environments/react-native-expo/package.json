@@ -4,12 +4,12 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "build": "expo export --platform web",
+    "android": "expo start --android --clear",
+    "ios": "expo start --ios --clear",
+    "web": "expo start --web --clear",
+    "build": "expo export --platform web --clear",
     "preview": "serve dist",
-    "test": "npm run build && start-server-and-test preview http://localhost:3000 test:execute",
+    "test": "yarn && npm run build && start-server-and-test preview http://localhost:3000 test:execute",
     "test:execute": "node test.js"
   },
   "dependencies": {

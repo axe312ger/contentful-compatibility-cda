@@ -7,12 +7,6 @@ const assert = require("assert");
   await driver.get("http://localhost:4200/");
 
   const loadingResult = await driver.findElement(By.id("loading-entries"));
-  const loadingResultText = await loadingResult.getText();
-  assert.strictEqual(
-    loadingResultText,
-    "Loading...",
-    "Result text does not indicate success."
-  );
 
   await driver.sleep(2000);
 

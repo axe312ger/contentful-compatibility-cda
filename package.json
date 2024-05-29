@@ -19,10 +19,9 @@
     "./environments/*"
   ],
   "dependencies": {
-    "contentful": "^11.0.0-alpha.2",
-    "contentful-sdk-core": "^8.0.0"
+    "contentful": "11.0.0-alpha.8"
   },
   "resolutions": {
-    "contentful": "11.0.0-alpha.2"
+    "contentful": "11.0.0-alpha.8"
   }
 }

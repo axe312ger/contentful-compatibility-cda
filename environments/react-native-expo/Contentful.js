@@ -20,7 +20,7 @@ export default function Contentful() {
         });
 
         await client.getEntries();
-        setResult(`✅ Success`);
+        setResult(`✅ Success!`);
       } catch (err) {
         setResult(`🚫 Error: ${err.message}`);
         throw err;

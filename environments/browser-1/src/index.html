@@ -5,6 +5,8 @@
     <script src="./contentful.browser.min.js"></script>
     <script>
       function onload() {
+        const loading = document.getElementById("loading-entries");
+
         try {
           const client = contentful.createClient({
             // This space is for testing purposes only.
@@ -13,8 +15,6 @@
             space: `k8iqpp6u0ior`,
             accessToken: `hO_7N0bLaCJFbu5nL3QVekwNeB_TNtg6tOCB_9qzKUw`,
           });
-
-          const loading = document.getElementById("loading-entries");
 
           client
             .getEntries()
