@@ -35,5 +35,5 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Start application
-        run: npm start
+      # - name: Start application
+      #   run: npm start
