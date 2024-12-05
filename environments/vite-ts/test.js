@@ -1,12 +1,13 @@
-import { Builder, By, Browser, until } from "selenium-webdriver"
-import assert from "assert"
+const { By } = require("selenium-webdriver");
+const assert = require("assert");
+const { setupSeleniumClient } = require("../../../scripts/setup-selenium");
 
 (async () => {
-  const driver = await new Builder().forBrowser(Browser.FIREFOX).build();
+  const driver = await setupSeleniumClient();
 
   await driver.get("http://localhost:4173/");
 
-  await driver.sleep(2000)
+  await driver.sleep(2000);
 
   // Check for success
   const loadingResult = await driver.findElement(By.id("loading-entries"));
@@ -22,4 +23,4 @@ import assert from "assert"
   );
 
   await driver.quit();
-})()
+})();

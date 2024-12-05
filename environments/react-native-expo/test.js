@@ -1,8 +1,9 @@
-const { Builder, By, Browser, until } = require("selenium-webdriver");
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const { setupSeleniumClient } = require("../../../scripts/setup-selenium");
 
 (async () => {
-  const driver = await new Builder().forBrowser(Browser.FIREFOX).build();
+  const driver = await setupSeleniumClient();
 
   await driver.get("http://localhost:3000/");
 

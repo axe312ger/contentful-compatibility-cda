@@ -1,11 +1,12 @@
-const { Builder, By, Browser } = require("selenium-webdriver");
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const { setupSeleniumClient } = require("../../../scripts/setup-selenium");
 
 describe("contentful.js execution test", () => {
   let driver;
 
   beforeAll(async () => {
-    driver = await new Builder().forBrowser(Browser.FIREFOX).build();
+    driver = await setupSeleniumClient();
   });
 
   afterAll(async () => {

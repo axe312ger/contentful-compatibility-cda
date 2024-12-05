@@ -1,4 +1,4 @@
-name: Text via npm start
+name: Test via npm start
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
+          cache: "yarn"
 
       - name: Cache Yarn dependencies
         uses: actions/cache@v3
@@ -32,21 +32,18 @@ jobs:
           restore-keys: |
             yarn-cache-${{ runner.os }}-
 
-      - name: Install Firefox
-        uses: browser-actions/setup-firefox@v1
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          install-chromedriver: true
 
-      - name: Verify Firefox installation
-        run: firefox --version
-
-      - name: Install Geckodriver
-        run: |
-          GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
-          curl -sL "https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz" | tar -xz -C /usr/local/bin
+      - name: Verify Chrome Verion
+        run: chrome --version
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Start application
-        run: npm start
+      - name: Run tests in all environments
+        run: npm test
         env:
-          DISPLAY: ":99.0"
+          BROWSER: "chrome"

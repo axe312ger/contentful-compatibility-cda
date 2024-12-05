@@ -1,14 +1,14 @@
-const { Builder, By, Capabilities } = require("selenium-webdriver");
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const {
+  setupSeleniumClientBrowserStack,
+} = require("../../../scripts/setup-selenium");
 
 describe("contentful.js execution test", () => {
   let driver;
 
   beforeAll(async () => {
-    driver = await new Builder()
-      .usingServer("http://localhost:4444/wd/hub")
-      .withCapabilities(Capabilities.chrome())
-      .build();
+    driver = await setupSeleniumClientBrowserStack();
   });
 
   afterAll(async () => {
