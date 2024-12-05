@@ -1,6 +1,6 @@
-const { By } = require("selenium-webdriver");
-const assert = require("assert");
-const { setupSeleniumClient } = require("../../scripts/setup-selenium");
+import { By } from "selenium-webdriver";
+import assert from "assert";
+import { setupSeleniumClient } from "../../scripts/setup-selenium.cjs";
 
 (async () => {
   const driver = await setupSeleniumClient();

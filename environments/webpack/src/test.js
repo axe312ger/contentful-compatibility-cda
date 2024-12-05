@@ -1,6 +1,6 @@
 import { By } from "selenium-webdriver";
 import assert from "assert"
-import { setupSeleniumClient } from "../../../scripts/setup-selenium.js"
+import { setupSeleniumClient } from "../../../scripts/setup-selenium.cjs"
 
 (async () => {
   const driver = await setupSeleniumClient();

@@ -1,6 +1,6 @@
 const { By } = require("selenium-webdriver");
 const assert = require("assert");
-const { setupSeleniumClient } = require("../../../scripts/setup-selenium");
+const { setupSeleniumClient } = require("../../../scripts/setup-selenium.cjs");
 
 describe("contentful.js execution test", () => {
   let driver;
