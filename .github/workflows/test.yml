@@ -1,0 +1,39 @@
+name: Text via npm start
+
+on:
+  push:
+    branches:
+      - main
+      - cma
+  pull_request:
+    branches:
+      - main
+      - cma
+
+jobs:
+  run-npm-start:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.yarn/cache
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            yarn-cache-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Start application
+        run: npm start

@@ -11,22 +11,21 @@ function getWorkspaces() {
 function runTest(workspace) {
   return new Promise((resolve, reject) => {
     const startTime = Date.now(); // Capture the start time
-    console.log(`Testing ${workspace}...`);
+    console.log(`🚀 Testing ${workspace}...`);
     exec(`npm test --workspace ${workspace}`, (error, stdout, stderr) => {
       const duration = (Date.now() - startTime) / 1000; // Calculate the duration in seconds
       if (error) {
-        console.error(`Test failed for ${workspace} in ${duration}:`);
+        console.error(`🚫 Test failed for ${workspace} in ${duration}s - Error:`);
         console.log(stdout);
         console.log(stderr);
         resolve({ workspace, success: false, duration });
       } else {
-        console.log(`Test succeeded for ${workspace} in ${duration}`);
+        console.log(`✅ Test succeeded for ${workspace} in ${duration}s`);
         resolve({ workspace, success: true, duration });
       }
     });
   });
 }
-
 
 async function runAllTests() {
   const workspaces = getWorkspaces();
@@ -37,14 +36,21 @@ async function runAllTests() {
   }
 
   console.log("\nTest Summary:");
+  let anyFailed = false;
   results.forEach((result) => {
     console.log(
       `${result.workspace}: ${result.success ? "✅ Passed" : "🚫 Failed"} in ${
         result.duration
       } seconds`
     );
+    if (!result.success) {
+      anyFailed = true;
+    }
   });
+  if (anyFailed) {
+    console.log("🚫🚫🚫 Some tests failed!");
+    process.exit(1);
+  }
 }
-
 
 runAllTests();
