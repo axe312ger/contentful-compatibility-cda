@@ -5555,9 +5555,7 @@
     debug "^4.3.4"
 
 "@sveltejs/vite-plugin-svelte@^3.0.0":
-  version "3.1.0"
-  resolved "http://localhost:4873/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-3.1.0.tgz#f9a1ff15e0206b4ed43fe06294d31b1319dcd654"
-  integrity sha512-sY6ncCvg+O3njnzbZexcVtUqOBE3iYmQPJ9y+yXSkOwG576QI/xJrBnQSRXFLGwJNBa0T78JEKg5cIR0WOAuUw==
+  version "3.1.2"
   dependencies:
     "@sveltejs/vite-plugin-svelte-inspector" "^2.0.0"
     debug "^4.3.4"
