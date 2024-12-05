@@ -5523,9 +5523,7 @@
   integrity sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==
 
 "@sveltejs/adapter-auto@^3.0.0":
-  version "3.2.1"
-  resolved "http://localhost:4873/@sveltejs/adapter-auto/-/adapter-auto-3.2.1.tgz#f2d39cd7ed625a2fe2db3c4e578c5e2fbb9263d5"
-  integrity sha512-/3xx8ZFCD5UBc/7AbyXkFF3HNCzWAp2xncH8HA4doGjoGQEN7PmwiRx4Y9nOzi4mqDqYYUic0gaIAE2khWWU4Q==
+  version "3.2.5"
   dependencies:
     import-meta-resolve "^4.1.0"
 
