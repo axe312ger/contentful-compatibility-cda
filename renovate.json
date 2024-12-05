@@ -2,5 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "baseBranches": ["main", "cma"],
+  "packageRules": [
+    {
+      "matchPaths": ["environments/*/package.json"],
+      "groupName": null
+    }
+  ],
+  "separateMinorPatch": true,
+  "dependencyDashboard": true,
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 10
 }
