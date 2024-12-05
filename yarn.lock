@@ -24,9 +24,7 @@
     rxjs "7.8.1"
 
 "@angular-devkit/build-angular@^17.3.6":
-  version "17.3.8"
-  resolved "http://localhost:4873/@angular-devkit/build-angular/-/build-angular-17.3.8.tgz#a19f05909551f79b95711235b1141f83f96fd558"
-  integrity sha512-ixsdXggWaFRP7Jvxd0AMukImnePuGflT9Yy7NJ9/y0cL/k//S/3RnkQv5i411KzN+7D4RIbNkRGGTYeqH24zlg==
+  version "17.3.11"
   dependencies:
     "@ampproject/remapping" "2.3.0"
     "@angular-devkit/architect" "0.1703.8"
