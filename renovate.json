@@ -12,6 +12,6 @@
   ],
   "separateMinorPatch": true,
   "dependencyDashboard": true,
-  "prHourlyLimit": 2,
-  "prConcurrentLimit": 10
+  "prHourlyLimit": 1,
+  "prConcurrentLimit": 42
 }
