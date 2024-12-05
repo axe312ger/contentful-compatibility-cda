@@ -38,6 +38,11 @@ jobs:
       - name: Verify Firefox installation
         run: firefox --version
 
+      - name: Install Geckodriver
+        run: |
+          GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r '.tag_name')
+          curl -sL "https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz" | tar -xz -C /usr/local/bin
+
       - name: Install dependencies
         run: yarn install
 
