@@ -1,6 +1,5 @@
 const { exec } = require("child_process");
 const glob = require("glob");
-const path = require("path");
 const fs = require("fs");
 
 function getWorkspaces() {
@@ -48,7 +47,7 @@ async function runAllTests() {
     }
   });
   if (anyFailed) {
-    console.log("🚫🚫🚫 Some tests failed!");
+    console.log("\n🚫🚫🚫\nSome tests failed!\n🚫🚫🚫");
     process.exit(1);
   }
 }
