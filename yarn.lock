@@ -5530,9 +5530,7 @@
     import-meta-resolve "^4.1.0"
 
 "@sveltejs/kit@^2.0.0":
-  version "2.5.10"
-  resolved "http://localhost:4873/@sveltejs/kit/-/kit-2.5.10.tgz#c52e54508d96af5db8a92f2a81250bd81d0c409b"
-  integrity sha512-OqoyTmFG2cYmCFAdBfW+Qxbg8m23H4dv6KqwEt7ofr/ROcfcIl3Z/VT56L22H9f0uNZyr+9Bs1eh2gedOCK9kA==
+  version "2.5.28"
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
