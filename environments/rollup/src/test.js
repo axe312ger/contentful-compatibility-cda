@@ -2,7 +2,7 @@ import { Builder, By, Browser, until } from "selenium-webdriver"
 import assert from "assert"
 
 (async () => {
-  const driver = await new Builder().forBrowser(Browser.SAFARI).build();
+  const driver = await new Builder().forBrowser(Browser.FIREFOX).build();
 
   await driver.get("http://localhost:3000/");
 

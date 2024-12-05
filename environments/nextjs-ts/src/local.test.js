@@ -5,7 +5,7 @@ describe("contentful.js execution test", () => {
   let driver;
 
   beforeAll(async () => {
-    driver = await new Builder().forBrowser(Browser.SAFARI).build();
+    driver = await new Builder().forBrowser(Browser.FIREFOX).build();
   });
 
   afterAll(async () => {
