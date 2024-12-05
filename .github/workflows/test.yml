@@ -32,10 +32,16 @@ jobs:
           restore-keys: |
             yarn-cache-${{ runner.os }}-
 
-      - uses: browser-actions/setup-firefox@v1
+      - name: Install Firefox
+        uses: browser-actions/setup-firefox@v1
+
+      - name: Verify Firefox installation
+        run: firefox --version
 
       - name: Install dependencies
         run: yarn install
 
       - name: Start application
         run: npm start
+        env:
+          DISPLAY: ":99.0"
