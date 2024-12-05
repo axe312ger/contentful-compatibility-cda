@@ -164,9 +164,7 @@
     tslib "^2.3.0"
 
 "@angular/compiler-cli@^17.3.0":
-  version "17.3.10"
-  resolved "http://localhost:4873/@angular/compiler-cli/-/compiler-cli-17.3.10.tgz#84a7ee6ac0ab9e924132589a788abfd656f671a6"
-  integrity sha512-85SBphqRj3szac3FbeYgEZ+I6WaAlo5h7JX06BdjOLLiaoIwlFhLeAuG+jVekseV+95grFUxIsCMphWHi2e6hQ==
+  version "17.3.12"
   dependencies:
     "@babel/core" "7.23.9"
     "@jridgewell/sourcemap-codec" "^1.4.14"
