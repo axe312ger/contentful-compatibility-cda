@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node run-tests.js",
     "cleanup": "rm -rf ./environments/*/node_modules ./node_modules",
-    "postinstall": "watchman watch-del ."
+    "fix-watchman": "watchman watch-del ."
   },
   "engines": {
     "node": "18"
