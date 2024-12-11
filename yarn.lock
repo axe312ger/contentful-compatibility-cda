@@ -6126,9 +6126,7 @@
     "@types/react" "*"
 
 "@types/react-dom@^18":
-  version "18.3.0"
-  resolved "http://localhost:4873/@types/react-dom/-/react-dom-18.3.0.tgz#0cbc818755d87066ab6ca74fbedb2547d74a82b0"
-  integrity sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==
+  version "18.3.5"
   dependencies:
     "@types/react" "*"
 
