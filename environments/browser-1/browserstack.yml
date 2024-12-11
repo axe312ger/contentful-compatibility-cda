@@ -44,11 +44,11 @@ platforms:
   - deviceName: iPhone 11
     browserName: Safari
     realMobile: true
-    osVersion: 15
+    osVersion: 13
   - deviceName: iPhone 8
     browserName: Safari
     realMobile: true
-    osVersion: 12.5.7
+    osVersion: 11
   - deviceName: iPad Pro 12.9 2018
     osVersion: 12
     browserName: safari

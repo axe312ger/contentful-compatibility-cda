@@ -1,8 +1,10 @@
-const { Builder, By, Browser, until } = require("selenium-webdriver");
+// @ts-check
+const { By } = require("selenium-webdriver");
 const assert = require("assert");
+const { setupSeleniumClient } = require("../../scripts/setup-selenium.cjs");
 
 (async () => {
-  const driver = await new Builder().forBrowser(Browser.SAFARI).build();
+  const driver = await setupSeleniumClient();
 
   await driver.get("http://localhost:4200/");
 

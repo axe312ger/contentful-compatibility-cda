@@ -1,0 +1,50 @@
+name: Test via npm start
+
+on:
+  push:
+    branches:
+      - main
+      - cma
+  pull_request:
+    branches:
+      - main
+      - cma
+
+jobs:
+  run-npm-start:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "yarn"
+
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.yarn/cache
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            yarn-cache-${{ runner.os }}-
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 131
+          install-chromedriver: true
+
+      - name: Verify Chrome Verion
+        run: chrome --version
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run tests in all environments
+        run: npm start
+        env:
+          BROWSER: "chrome"
