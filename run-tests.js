@@ -30,6 +30,10 @@ async function runAllTests() {
   const workspaces = getWorkspaces();
   const results = [];
   for (const workspace of workspaces) {
+    // skip browserstack.com tests till an access key is provided
+    if (!process.env.BROWSERSTACK_ACCESS_KEY && workspace.indexOf("browser-")) {
+      continue;
+    }
     const result = await runTest(workspace);
     results.push(result);
   }
