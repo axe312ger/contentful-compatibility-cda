@@ -13,12 +13,13 @@
     "test:execute": "node test.js"
   },
   "dependencies": {
-    "nuxt": "^3.11.2",
-    "vite": "^5.2.11",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.0"
+    "contentful": "^11.3.1",
+    "nuxt": "^3.14.1592",
+    "vite": "^5.4.11",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "selenium-webdriver": "^4.20.0"
+    "selenium-webdriver": "^4.27.0"
   }
 }
