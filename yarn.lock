@@ -8087,10 +8087,10 @@ browserstack-local@^1.5.3, browserstack-local@^1.5.5:
     ps-tree "=1.2.0"
     temp-fs "^0.9.9"
 
-browserstack-node-sdk@1.34.28:
-  version "1.34.28"
-  resolved "https://registry.yarnpkg.com/browserstack-node-sdk/-/browserstack-node-sdk-1.34.28.tgz#e75ecb75522da9152141874830bae1186fcb4d86"
-  integrity sha512-BSppfC2Eb5ZaVV2nZyO0M7Q8dfrah0cWfbS0+vy5Vwc+RiyihAQU2ZeJaJFGt396JEgPvx89QURdOEqnCIhBcg==
+browserstack-node-sdk@1.34.29:
+  version "1.34.29"
+  resolved "https://registry.yarnpkg.com/browserstack-node-sdk/-/browserstack-node-sdk-1.34.29.tgz#2128e2e74f8224398a572efbf7bee9ce05fd783b"
+  integrity sha512-f0rpHfDkmKPMRaxnBcB3U1wc4Wr66nHfbSVXRmRvnZbunNGc90SKFnxoYY96AFiWjIlO+mgd2UoTE/BnLRwkjg==
   dependencies:
     "@google-cloud/compute" "^4.0.1"
     "@google-cloud/container" "^5.2.0"
