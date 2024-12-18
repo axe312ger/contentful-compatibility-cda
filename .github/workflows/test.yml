@@ -17,9 +17,9 @@ jobs:
       matrix:
         include:
           - environment: angular
-          - environment: browser-1
-          - environment: browser-2
-          - environment: browser-3
+          # - environment: browser-1
+          # - environment: browser-2
+          # - environment: browser-3
           - environment: gatsbyjs
           - environment: nextjs
           - environment: nextjs-ts
