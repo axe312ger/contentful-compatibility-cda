@@ -11,7 +11,7 @@ Ensure Contentful SDKs work reliably in:
 
 ## Supported Environments
 
-Full list here: https://github.com/contentful-userland/contentful-compatability/tree/main/environments
+Full list here: https://github.com/contentful-userland/contentful-compatibility/tree/main/environments
 
 ### Node.js
 - **CommonJS (CJS)**
