@@ -1046,12 +1046,7 @@
   dependencies:
     "@contentful/rich-text-types" "^16.8.5"
 
-"@contentful/rich-text-types@^16.2.0":
-  version "16.3.5"
-  resolved "http://localhost:4873/@contentful/rich-text-types/-/rich-text-types-16.3.5.tgz#927433a84416101ba3dbf19bd0924e755f5e6d65"
-  integrity sha512-ZLq6p5uyQXg+i1XGDFu4tAc2VYS12S1KA/jIOyyZjNgC1DvDajsi1JzuiBuOuMEhi1sKEUy6Ry3Yr9jsQtOKuQ==
-
-"@contentful/rich-text-types@^16.6.1", "@contentful/rich-text-types@^16.8.5":
+"@contentful/rich-text-types@^16.2.0", "@contentful/rich-text-types@^16.6.1", "@contentful/rich-text-types@^16.8.5":
   version "16.8.5"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.8.5.tgz#832c8b428612f5181908bc1033c6ef9f48f1ce83"
   integrity sha512-q18RJuJCOuYveGiCIjE5xLCQc5lZ3L2Qgxrlg/H2YEobDFqdtmklazRi1XwEWaK3tMg6yVXBzKKkQfLB4qW14A==
