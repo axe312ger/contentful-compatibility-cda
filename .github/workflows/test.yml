@@ -11,9 +11,26 @@ on:
       - cma
 
 jobs:
-  run-npm-start:
+  discover-environments:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
+      - name: Discover test environments
+        id: set-matrix
+        run: |
+          env_dirs=$(ls -d environments/* | xargs -n 1 basename)
+          matrix=$(echo $env_dirs | jq -cR 'split(" ") | map({environment: .})')
+          echo "matrix=$matrix" >> $GITHUB_OUTPUT
+
+  run-tests:
+    needs: discover-environments
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.discover-environments.outputs.matrix) }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -44,7 +61,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests in all environments
-        run: npm start
+      - name: Run tests
+        run: npm test
+        working-directory: environments/${{ matrix.environment }}
         env:
           BROWSER: "chrome"
