@@ -1,30 +1,68 @@
-# Research: dual packages with browser support
+# Contentful Compatibility Suite
 
-We need to find a way to export our library as CJS, ESM and to the browser. Additionally, there are now dependencies that are ONLY available in ESM syntax, potentially breaking CJS only environments.
+This repository tests and demonstrates the compatibility of Contentful SDKs across various JavaScript environments. It provides automated tests, example implementations, and a framework for validating SDK usage in diverse runtime and build systems.
 
-## We should ensure the plugin works in all common JS environments:
+## Purpose
 
-- ✅ node - CJS
-- ✅ node - ESM
-- ✅ node - TS (ESM + CJS)
-- ✅ browsers and mobile devices -> using browser bundle 
-  - ✅ via selenium
-  - ✅ iOS / android / mobile!
-- ✅ Gastby
-- ✅ Nextjs
-  - ✅ ts!
-- bundlers - what should we do? only bundle? or also test if a website with the bundle can be run? at least on headless chrome locally? playwright?
-  - ✅ Webpack
-  - ✅ rollup
-  - ✅ vite
-    - ✅ ts
-  - ✅ parcel (we already have it via browsers test)
-- ✅ Nuxt
-- ✅ Svelte
-- ✅ Angular
-- ✅ React native
+Ensure Contentful SDKs work reliably in:
+- Node.js (CJS, ESM, TypeScript)
+- Browsers (mobile and desktop)
+- Popular frameworks, bundlers, and runtimes
 
-## Assumptions
+## Supported Environments
 
-- The user has at least node v18 in use to run / build the project
+Full list here: https://github.com/contentful-userland/contentful-compatability/tree/main/environments
 
+### Node.js
+- **CommonJS (CJS)**
+- **ES Modules (ESM)**
+- **TypeScript (CJS & ESM)**
+
+### Browsers & Mobile
+- Desktop and mobile browser bundles tested with Selenium
+- iOS and Android mobile platforms
+
+### Frameworks
+- **Gatsby**
+- **Next.js**
+- **Nuxt**
+- **Svelte**
+- **Angular**
+- **React Native**
+
+### Bundlers
+- **Webpack**
+- **Rollup**
+- **Vite** (with TypeScript)
+- **Parcel**
+
+## Quick Start
+
+**Important:** You will need Node v18 as this is currently supported accross all environments.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo-link.git
+   cd contentful-sdk-compatibility-suite
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Optional: Provide browserstack credentials via env variables
+   ```bash
+   BROWSERSTACK_USERNAME=benediktroetsch_GN0yug
+   BROWSERSTACK_ACCESS_KEY=qBvXgbx2saYVwUCASqBm
+   ```
+
+4. Run the suite:
+   ```bash
+   npm start
+   ```
+
+
+## Contributing
+
+Contributions are welcome! Add environments, new ways of using the library in one fo the existing environments, improve tests in general, or suggest more features.
