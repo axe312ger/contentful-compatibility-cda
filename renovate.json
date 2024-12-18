@@ -31,6 +31,7 @@
         "@react-native-*",
         "@expo/*"
       ],
+      "matchFileNames": ["environments/react-native-expo/**"],
       "groupName": "react native ecosystem"
     },
     {
@@ -53,6 +54,7 @@
         "nuxt",
         "nuxt-*"
       ],
+      "matchFileNames": ["environments/react-native-expo/**"],
       "groupName": "nuxt ecosystem"
     },
     {
@@ -68,6 +70,7 @@
         "rollup-plugin-*",
         "@rollup/*"
       ],
+      "matchFileNames": ["environments/rollup/**"],
       "groupName": "rollup ecosystem"
     },
     {
@@ -76,6 +79,7 @@
         "webpack-*",
         "@webpack/*"
       ],
+      "matchFileNames": ["environments/webpack/**"],
       "groupName": "webpack ecosystem"
     },
     {
@@ -85,8 +89,6 @@
       ],
       "groupName": "typescript updates"
     }
-
-  
   ],
   "separateMinorPatch": true,
   "dependencyDashboard": true,
