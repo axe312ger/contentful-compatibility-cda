@@ -10,8 +10,8 @@
     "test:execute": "node src/test.js"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
     "rollup": "^4.16.4",
     "serve": "^14.2.3"
   },
