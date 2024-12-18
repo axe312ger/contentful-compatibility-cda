@@ -49,9 +49,11 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.yarn/cache
-          key: yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-${{ github.ref_name }}
           restore-keys: |
+            yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
             yarn-cache-${{ runner.os }}-
+            yarn-cache-
 
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
