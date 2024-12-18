@@ -11,37 +11,29 @@ on:
       - cma
 
 jobs:
-  discover-environments:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: List environment directories
-        run: ls -d environments/* || echo "No environments found!"
-
-      - name: Discover test environments
-        id: set-matrix
-        run: |
-          env_dirs=$(ls -d environments/* 2>/dev/null | xargs -n 1 basename | grep -v '^$')
-          if [ -z "$env_dirs" ]; then
-            echo "No environments found! Setting matrix to empty."
-            echo '{"environment":[]}' > matrix.json
-          else
-            echo "Found environments: $env_dirs"
-            echo "$env_dirs" | jq -R 'split("\n") | map(select(. != "")) | map({environment: .})' > matrix.json
-          fi
-          cat matrix.json
-          echo "matrix=$(cat matrix.json)" >> $GITHUB_OUTPUT
-        shell: bash
-
   run-tests:
-    needs: discover-environments
     runs-on: ubuntu-latest
     strategy:
-      matrix: ${{ fromJson(needs.discover-environments.outputs.matrix) }}
+      matrix:
+        include:
+          - environment: angular
+          - environment: browser-1
+          - environment: browser-2
+          - environment: browser-3
+          - environment: gatsbyjs
+          - environment: nextjs
+          - environment: nextjs-ts
+          - environment: node-cjs
+          - environment: node-mjs
+          - environment: node-ts-cjs
+          - environment: node-ts-mjs
+          - environment: nuxt
+          - environment: react-native-expo
+          - environment: rollup
+          - environment: svelte
+          - environment: vite
+          - environment: vite-ts
+          - environment: webpack
       fail-fast: false
     steps:
       - name: Checkout code
