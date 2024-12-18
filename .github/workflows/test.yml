@@ -45,16 +45,6 @@ jobs:
           node-version: 18
           cache: "yarn"
 
-      - name: Cache Yarn dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.yarn/cache
-          key: yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-${{ github.ref_name }}
-          restore-keys: |
-            yarn-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
-            yarn-cache-${{ runner.os }}-
-            yarn-cache-
-
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
         with:
