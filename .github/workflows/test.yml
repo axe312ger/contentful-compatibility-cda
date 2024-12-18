@@ -25,22 +25,24 @@ jobs:
       - name: Discover test environments
         id: set-matrix
         run: |
-          env_dirs=$(ls -d environments/* | xargs -n 1 basename)
+          env_dirs=$(ls -d environments/* 2>/dev/null | xargs -n 1 basename | grep -v '^$')
           if [ -z "$env_dirs" ]; then
             echo "No environments found! Setting matrix to empty."
             echo '{"environment":[]}' > matrix.json
           else
             echo "Found environments: $env_dirs"
-            echo "$env_dirs" | jq -R 'split("\n")[:-1] | map({environment: .})' > matrix.json
+            echo "$env_dirs" | jq -R 'split("\n") | map(select(. != "")) | map({environment: .})' > matrix.json
           fi
           cat matrix.json
           echo "matrix=$(cat matrix.json)" >> $GITHUB_OUTPUT
+        shell: bash
 
   run-tests:
     needs: discover-environments
     runs-on: ubuntu-latest
     strategy:
       matrix: ${{ fromJson(needs.discover-environments.outputs.matrix) }}
+      fail-fast: false
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
