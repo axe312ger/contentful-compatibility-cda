@@ -9,11 +9,85 @@
   ],
   "packageRules": [
     {
-      "matchFileNames": [
-        "environments/*/package.json"
+      "matchPackages": [
+        "gatsby",
+        "gatsby-*"
       ],
-      "groupName": null
+      "groupName": "gatsby ecosystem"
+    },
+    {
+      "matchPackages": [
+        "@angular/*",
+        "rxjs",
+        "zone.js"
+      ],
+      "groupName": "angular ecosystem"
+    },
+    {
+      "matchPackages": [
+        "react",
+        "react-dom",
+        "react-native",
+        "expo",
+        "@react-native-*",
+        "@expo/*"
+      ],
+      "groupName": "react native ecosystem"
+    },
+    {
+      "matchPackages": [
+        "vite",
+        "vite-plugin-*",
+        "@vitejs/*"
+      ],
+      "groupName": "vite ecosystem"
+    },
+    {
+      "matchPackages": [
+        "next",
+        "next-*"
+      ],
+      "groupName": "next.js ecosystem"
+    },
+    {
+      "matchPackages": [
+        "nuxt",
+        "nuxt-*"
+      ],
+      "groupName": "nuxt ecosystem"
+    },
+    {
+      "matchPackages": [
+        "svelte",
+        "svelte-*"
+      ],
+      "groupName": "svelte ecosystem"
+    },
+    {
+      "matchPackages": [
+        "rollup",
+        "rollup-plugin-*",
+        "@rollup/*"
+      ],
+      "groupName": "rollup ecosystem"
+    },
+    {
+      "matchPackages": [
+        "webpack",
+        "webpack-*",
+        "@webpack/*"
+      ],
+      "groupName": "webpack ecosystem"
+    },
+    {
+      "matchPackages": [
+        "typescript",
+        "@types/*"
+      ],
+      "groupName": "typescript updates"
     }
+
+  
   ],
   "separateMinorPatch": true,
   "dependencyDashboard": true,
