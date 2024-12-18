@@ -3,10 +3,15 @@
   "extends": [
     "config:recommended"
   ],
-  "baseBranches": ["main", "cma"],
+  "baseBranches": [
+    "main",
+    "cma"
+  ],
   "packageRules": [
     {
-      "matchPaths": ["environments/*/package.json"],
+      "matchFileNames": [
+        "environments/*/package.json"
+      ],
       "groupName": null
     }
   ],
