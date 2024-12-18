@@ -84,10 +84,9 @@
     },
     {
       "matchPackageNames": [
-        "typescript",
         "@types/*"
       ],
-      "groupName": "typescript updates"
+      "groupName": "typescript types"
     }
   ],
   "separateMinorPatch": true,
