@@ -8,14 +8,14 @@
   ],
   "packageRules": [
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "gatsby",
         "gatsby-*"
       ],
       "groupName": "gatsby ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "@angular/*",
         "rxjs",
         "zone.js"
@@ -23,7 +23,7 @@
       "groupName": "angular ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "react",
         "react-dom",
         "react-native",
@@ -34,7 +34,7 @@
       "groupName": "react native ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "vite",
         "vite-plugin-*",
         "@vitejs/*"
@@ -42,28 +42,28 @@
       "groupName": "vite ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "next",
         "next-*"
       ],
       "groupName": "next.js ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "nuxt",
         "nuxt-*"
       ],
       "groupName": "nuxt ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "svelte",
         "svelte-*"
       ],
       "groupName": "svelte ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "rollup",
         "rollup-plugin-*",
         "@rollup/*"
@@ -71,7 +71,7 @@
       "groupName": "rollup ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "webpack",
         "webpack-*",
         "@webpack/*"
@@ -79,7 +79,7 @@
       "groupName": "webpack ecosystem"
     },
     {
-      "matchPackages": [
+      "matchPackageNames": [
         "typescript",
         "@types/*"
       ],
