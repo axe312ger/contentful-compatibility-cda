@@ -14,7 +14,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
-    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "selenium-webdriver": "^4.20.0",
     "start-server-and-test": "^2.0.3",
     "svelte": "^4.2.7",
