@@ -90,6 +90,6 @@
   ],
   "separateMinorPatch": true,
   "dependencyDashboard": true,
-  "prHourlyLimit": 1,
-  "prConcurrentLimit": 42
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 420
 }
