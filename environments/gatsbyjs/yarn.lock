@@ -1151,22 +1151,30 @@
   resolved "http://localhost:4873/@builder.io/partytown/-/partytown-0.7.6.tgz#697acea6b552167a4dd43ddd4827018aa42e0364"
   integrity sha512-snXIGNiZpqjno3XYQN2lbBB+05hsQR/LSttbtIW1c0gmZ7Kh/DIo0YrxlDxCDulAMFPFM8J+4voLwvYepSj3sw==
 
-"@contentful/rich-text-react-renderer@^15.17.0":
-  version "15.19.6"
-  resolved "http://localhost:4873/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.19.6.tgz#a5121d2262bd0c28cef2bf6b1cf2a63871cf7c93"
-  integrity sha512-SPpkr2uSyirsN/uUaek8djqLMGP8nPqSqxoQ8M0VJcfD9+INKK56vjmteNr5dBbqAZO/PJMxT1S8to9BndpinQ==
+"@contentful/content-source-maps@^0.11.7":
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/@contentful/content-source-maps/-/content-source-maps-0.11.7.tgz#ddb494bdfeeab74169f95eca1dff2a1e7b88c2b6"
+  integrity sha512-f+AVIM/Z+AmCagM+9hDUhhT63WVFJurbqHhzul8KVyPNIJLaUHAfMns+nxgEKCPRtef+rCk7ufaZ3HEUS1ssYQ==
   dependencies:
-    "@contentful/rich-text-types" "^16.3.5"
+    "@vercel/stega" "^0.1.2"
+    json-pointer "^0.6.2"
 
-"@contentful/rich-text-types@^15.15.1":
-  version "15.15.1"
-  resolved "http://localhost:4873/@contentful/rich-text-types/-/rich-text-types-15.15.1.tgz#96835cf0d0eba9e54f92ee43a4a1ce2a74014b53"
-  integrity sha512-oheW0vkxWDuKBIIXDeJfZaRYo+NzKbC4gETMhH+MGJd4nfL9cqrOvtRxZBgnhICN4vDpH4my/zUIZGKcFqGSjQ==
+"@contentful/rich-text-react-renderer@^15.22.11":
+  version "15.22.11"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.22.11.tgz#111859f7278a42c52b8ad1ce9ffc2f877609fc83"
+  integrity sha512-IDDdiFSab+C3G2HZRbFegTFuagl8dZpJHgWevoS9ODbatgC9GU6LcLz2hz7KKazsxuBJzgxnFsPd2v5+EtTHrg==
+  dependencies:
+    "@contentful/rich-text-types" "^16.8.5"
 
-"@contentful/rich-text-types@^16.0.2", "@contentful/rich-text-types@^16.2.0", "@contentful/rich-text-types@^16.3.5":
+"@contentful/rich-text-types@^16.2.0":
   version "16.3.5"
   resolved "http://localhost:4873/@contentful/rich-text-types/-/rich-text-types-16.3.5.tgz#927433a84416101ba3dbf19bd0924e755f5e6d65"
   integrity sha512-ZLq6p5uyQXg+i1XGDFu4tAc2VYS12S1KA/jIOyyZjNgC1DvDajsi1JzuiBuOuMEhi1sKEUy6Ry3Yr9jsQtOKuQ==
+
+"@contentful/rich-text-types@^16.6.1", "@contentful/rich-text-types@^16.8.5":
+  version "16.8.5"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.8.5.tgz#832c8b428612f5181908bc1033c6ef9f48f1ce83"
+  integrity sha512-q18RJuJCOuYveGiCIjE5xLCQc5lZ3L2Qgxrlg/H2YEobDFqdtmklazRi1XwEWaK3tMg6yVXBzKKkQfLB4qW14A==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -2052,6 +2060,11 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
+"@rollup/rollup-linux-x64-gnu@^4.18.0":
+  version "4.28.1"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.28.1.tgz#b83001b5abed2bcb5e2dbeec6a7e69b194235c1e"
+  integrity sha512-fzgeABz7rrAlKYB0y2kSEiURrI0691CSL0+KXwKwhxvj92VULEDQLpBYLHpF49MSiPG4sq5CK3qHMnb9tlCjBw==
+
 "@sideway/address@^4.1.5":
   version "4.1.5"
   resolved "http://localhost:4873/@sideway/address/-/address-4.1.5.tgz#4bc149a0076623ced99ca8208ba780d65a99b9d5"
@@ -2478,6 +2491,11 @@
   dependencies:
     async-retry "^1.3.3"
     debug "^4.3.3"
+
+"@vercel/stega@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@vercel/stega/-/stega-0.1.2.tgz#0c20c5c9419c4288b1de58a64b5f9f26c763b25f"
+  integrity sha512-P7mafQXjkrsoyTRppnt0N21udKS9wUmLXHRyP9saLXLHw32j/FgUJ3FscSWgvSqRs4cj7wKZtwqJEvWJ2jbGmA==
 
 "@vercel/webpack-asset-relocator-loader@^1.7.3":
   version "1.7.3"
@@ -3002,10 +3020,10 @@ axios@^0.21.1:
   dependencies:
     follow-redirects "^1.14.0"
 
-axios@^1.6.7:
-  version "1.6.8"
-  resolved "http://localhost:4873/axios/-/axios-1.6.8.tgz#66d294951f5d988a00e87a0ffb955316a619ea66"
-  integrity sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==
+axios@^1.7.4:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.9.tgz#d7d071380c132a24accda1b2cfc1535b79ec650a"
+  integrity sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -3853,35 +3871,38 @@ content-type@~1.0.4, content-type@~1.0.5:
   resolved "http://localhost:4873/content-type/-/content-type-1.0.5.tgz#8b773162656d1d1086784c8f23a54ce6d73d7918"
   integrity sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==
 
-contentful-resolve-response@^1.3.12:
-  version "1.8.1"
-  resolved "http://localhost:4873/contentful-resolve-response/-/contentful-resolve-response-1.8.1.tgz#b44ff13e12fab7deb00ef6216d8a7171bdda0395"
-  integrity sha512-VXGK2c8dBIGcRCknqudKmkDr2PzsUYfjLN6hhx71T09UzoXOdA/c0kfDhsf/BBCBWPWcLaUgaJEFU0lCo45TSg==
+contentful-resolve-response@^1.9.0:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/contentful-resolve-response/-/contentful-resolve-response-1.9.2.tgz#a341e84aabb16c871fea37073e6d890e0e2513fb"
+  integrity sha512-VTY1hZGh29yspBeveJ62cuDf+cw9Iq/NcKWBdNHjTq8hvgxz+E19+Pej3LW/02o98+D0XcKfcPYXIpm4lHY+eg==
   dependencies:
     fast-copy "^2.1.7"
 
-contentful-sdk-core@^7.0.5:
-  version "7.1.0"
-  resolved "http://localhost:4873/contentful-sdk-core/-/contentful-sdk-core-7.1.0.tgz#74d3ef8b167c5ac390fbb5db2d6e433731e05115"
-  integrity sha512-RzTPnRsbCdVAhyka3wa9sDsAu9YsxoerNgaMqd63Ljb7qpG2zkdHcP7NTfyIbuHDJNJdAQdifyafxfEEwP+q/w==
+contentful-sdk-core@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-9.0.1.tgz#13460882fe58a0e507227831f5596c6d9f27233e"
+  integrity sha512-Ao/5Y74ERPn6kjzb/8okYPuQJnikMtR+dnv0plLw8IvPomwXonLq3qom0rLSyo5KuvQkBMa9AApy1izunxW4mw==
   dependencies:
-    fast-copy "^2.1.7"
-    lodash.isplainobject "^4.0.6"
-    lodash.isstring "^4.0.1"
-    p-throttle "^4.1.1"
-    qs "^6.9.4"
+    fast-copy "^3.0.2"
+    lodash "^4.17.21"
+    p-throttle "^6.1.0"
+    process "^0.11.10"
+    qs "^6.12.3"
+  optionalDependencies:
+    "@rollup/rollup-linux-x64-gnu" "^4.18.0"
 
-contentful@^9.3.5:
-  version "9.3.6"
-  resolved "http://localhost:4873/contentful/-/contentful-9.3.6.tgz#b2c9b7099b7f2b5ae7868dbbf894bb24e47ce449"
-  integrity sha512-RJZ+CUh2fC6OQL89XHCSVsj1AQxqscgq+9wDdj+aWd67aZWzXnanKFVB5MsICM6y49D6XX4pf88d2mkyw74qKA==
+contentful@^11.2.5:
+  version "11.3.3"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-11.3.3.tgz#7ef9e914c92108a58dae3b435edaf4ea3c3d30a0"
+  integrity sha512-85AoXgkqnHy9id912lWMwwqUc1twofCmcwLJery9EWtBhcpBPm8qVmPKVjJeqLwr+4nIsOFVdUAUgtJYqSOo8w==
   dependencies:
-    "@contentful/rich-text-types" "^16.0.2"
-    axios "^1.6.7"
-    contentful-resolve-response "^1.3.12"
-    contentful-sdk-core "^7.0.5"
-    fast-copy "^2.1.7"
+    "@contentful/content-source-maps" "^0.11.7"
+    "@contentful/rich-text-types" "^16.6.1"
+    axios "^1.7.4"
+    contentful-resolve-response "^1.9.0"
+    contentful-sdk-core "^9.0.1"
     json-stringify-safe "^5.0.1"
+    type-fest "^4.0.0"
 
 convert-hrtime@^3.0.0:
   version "3.0.0"
@@ -5194,6 +5215,11 @@ fast-copy@^2.1.7:
   resolved "http://localhost:4873/fast-copy/-/fast-copy-2.1.7.tgz#affc9475cb4b555fb488572b2a44231d0c9fa39e"
   integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
 
+fast-copy@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-3.0.2.tgz#59c68f59ccbcac82050ba992e0d5c389097c9d35"
+  integrity sha512-dl0O9Vhju8IrcLndv2eU4ldt1ftXMqqfgN4H1cpmGV7P6jeB9FwpN9a2c8DPGE1Ys88rNUJVYDHq73CGAGOPfQ==
+
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "http://localhost:4873/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -5400,6 +5426,11 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
+foreach@^2.0.4:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.6.tgz#87bcc8a1a0e74000ff2bf9802110708cfb02eb6e"
+  integrity sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==
+
 fork-ts-checker-webpack-plugin@^6.5.0:
   version "6.5.3"
   resolved "http://localhost:4873/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-6.5.3.tgz#eda2eff6e22476a2688d10661688c47f611b37f3"
@@ -5586,10 +5617,10 @@ gatsby-core-utils@^4.13.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^4.15.0-next.0:
-  version "4.15.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.15.0-next.0.tgz#aaa6643049dc66984bc2c65ece9abc3ac2f33d29"
-  integrity sha512-DLy4sSplzOL3LhUHH3zZG/5pGc1LeimEKTuD+CD4JUYRFQuiMn4qL0+xzOzObCbGstGtZdhhD7cz0dpJ1rn5DQ==
+gatsby-core-utils@^4.14.0:
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.14.0.tgz#d044327b9399f0449674f8abf1037d1a3ab4e84e"
+  integrity sha512-h0v20gB213PmhKjioCJ93SrUb7Hihnqxd6X6Iur4u1eiWTUDsGeV9g1bkquiuDl2qovUnjj7mOoHdWiu/Ax/9Q==
   dependencies:
     "@babel/runtime" "^7.20.13"
     ci-info "2.0.0"
@@ -5746,16 +5777,16 @@ gatsby-plugin-utils@^4.13.1:
     joi "^17.9.2"
     mime "^3.0.0"
 
-gatsby-plugin-utils@^4.15.0-next.0:
-  version "4.15.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.15.0-next.0.tgz#9245d4d8608b325b22883277918a95236fa1577e"
-  integrity sha512-A2ToxRTWOidx/IkhXuPQi75N9KntS0fxTLwi4VTrCLunPm9fOs6wMe9DFSrG97BOC+fn9U+OUFfsw5YPBgUoGQ==
+gatsby-plugin-utils@^4.14.0:
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.14.0.tgz#5ba6f5a92ba3a79d5b66ab59c8243d4504418782"
+  integrity sha512-w7EZ0C7JA9sG3JiBS2ffGsrZplAbtNk0Junb3UeUFj66CY0MU8UV0rZIzBkz+EMbQvPkxvVJNQu4/tA9ohCvfA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     fastq "^1.16.0"
     fs-extra "^11.2.0"
-    gatsby-core-utils "^4.15.0-next.0"
-    gatsby-sharp "^1.15.0-next.0"
+    gatsby-core-utils "^4.14.0"
+    gatsby-sharp "^1.14.0"
     graphql-compose "^9.0.10"
     import-from "^4.0.0"
     joi "^17.11.0"
@@ -5781,30 +5812,29 @@ gatsby-sharp@^1.13.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-sharp@^1.15.0-next.0:
-  version "1.15.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.15.0-next.0.tgz#a5a0def32845c62f8debd289f30c5bd10006317e"
-  integrity sha512-lH6KXHW9zZs1AJaVbJOegVxIq8sboi8CUXq8GJV57dZr8JT1PUeMDrK1mDNqDB3jpfhklWdyE7lxhsL9VHfKCQ==
+gatsby-sharp@^1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.14.0.tgz#85ee5b60999d68c508199b74f445a1d369e84254"
+  integrity sha512-2lZg8NEg5M8jzkMYZouf0I5e1TVpwjtEiKg48R4dGOhYqDKGfENVJWRnvYtw12zNfgBgQ/gUryG7Zj7qMLVANA==
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@8.15.0-next.0:
-  version "8.15.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.15.0-next.0.tgz#d854beb2ee94d36b792a34dc962a202fa4eb8de1"
-  integrity sha512-5BRYC+niXIhXUKauzvQqVYrNsSlGgIus8ijdyEva8OUBfyhxj82NYBzV0SpQU1BgJMa4kZ5z0z6Y8cpIQm0ACQ==
+gatsby-source-contentful@8.15.0:
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.15.0.tgz#72ee16bbc641058e65ef52d7381eae8e2dd21ec1"
+  integrity sha512-/zBM6AAv9w/VW0OZf8J+1Gab0QFz8d06JU1tsEncxKyBWfbeYcIKbttvTyvttrMuZJMSY3UZfisB1ngBZlOWjA==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@contentful/rich-text-react-renderer" "^15.17.0"
-    "@contentful/rich-text-types" "^15.15.1"
+    "@contentful/rich-text-react-renderer" "^15.22.11"
     "@hapi/joi" "^15.1.1"
     "@vercel/fetch-retry" "^5.1.3"
     chalk "^4.1.2"
     common-tags "^1.8.2"
-    contentful "^9.3.5"
+    contentful "^11.2.5"
     fs-extra "^11.2.0"
-    gatsby-core-utils "^4.15.0-next.0"
-    gatsby-plugin-utils "^4.15.0-next.0"
-    gatsby-source-filesystem "^5.15.0-next.0"
+    gatsby-core-utils "^4.14.0"
+    gatsby-plugin-utils "^4.14.0"
+    gatsby-source-filesystem "^5.14.0"
     is-online "^10.0.0"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.21"
@@ -5812,16 +5842,16 @@ gatsby-source-contentful@8.15.0-next.0:
     semver "^7.5.3"
     url "^0.11.1"
 
-gatsby-source-filesystem@^5.15.0-next.0:
-  version "5.15.0-next.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.15.0-next.0.tgz#da2dc40ffb08440d55ddf2f4091d24f47079ed2d"
-  integrity sha512-rV8YSPiX/pYB53qN/cYA/HDhrwzPIJte1094LwjbPDJFcGA3zkEJLsyl4RJ74S+j2JhWvt+k9RQyUN6sogOZMQ==
+gatsby-source-filesystem@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.14.0.tgz#f2c765f2eead173918b3d1bc92626bc770867972"
+  integrity sha512-uewEJaHvdxZlN6DOtZCIUuI7X5v9MRk5IVpCYy9SIZCDbnUA5siEd2A4SC+kcXxJM6AUbdvkfayqpVJrm5JaZA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.2.0"
-    gatsby-core-utils "^4.15.0-next.0"
+    gatsby-core-utils "^4.14.0"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
@@ -7253,6 +7283,13 @@ json-parse-even-better-errors@^2.3.0, json-parse-even-better-errors@^2.3.1:
   resolved "http://localhost:4873/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
   integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
 
+json-pointer@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/json-pointer/-/json-pointer-0.6.2.tgz#f97bd7550be5e9ea901f8c9264c9d436a22a93cd"
+  integrity sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==
+  dependencies:
+    foreach "^2.0.4"
+
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "http://localhost:4873/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
@@ -7486,16 +7523,6 @@ lodash.foreach@^4.5.0:
   version "4.5.0"
   resolved "http://localhost:4873/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
   integrity sha512-aEXTF4d+m05rVOAUG3z4vZZ4xVexLKZGF0lIxuHZ1Hplpk/3B6Z1+/ICICYRLm7c41Z2xiejbkCkJoTlypoXhQ==
-
-lodash.isplainobject@^4.0.6:
-  version "4.0.6"
-  resolved "http://localhost:4873/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
-  integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
-
-lodash.isstring@^4.0.1:
-  version "4.0.1"
-  resolved "http://localhost:4873/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
-  integrity sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==
 
 lodash.map@^4.6.0:
   version "4.6.0"
@@ -8477,10 +8504,10 @@ p-some@^6.0.0:
     aggregate-error "^4.0.0"
     p-cancelable "^3.0.0"
 
-p-throttle@^4.1.1:
-  version "4.1.1"
-  resolved "http://localhost:4873/p-throttle/-/p-throttle-4.1.1.tgz#80b1fbd358af40a8bfa1667f9dc8b72b714ad692"
-  integrity sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==
+p-throttle@^6.1.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/p-throttle/-/p-throttle-6.2.0.tgz#bc75ff1f128680bec15568cbf7312ae34a9d35ed"
+  integrity sha512-NCKkOVj6PZa6NiTmfvGilDdf6vO1rFCD3KDnkHko8dTOtkpk4cSR/VTAhhLMG9aiQ7/A9HYgEDNmxzf6hxzR3g==
 
 p-timeout@^3.2.0:
   version "3.2.0"
@@ -9034,6 +9061,11 @@ process-nextick-args@~2.0.0:
   resolved "http://localhost:4873/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
+
 progress@^2.0.0, progress@^2.0.3:
   version "2.0.3"
   resolved "http://localhost:4873/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -9146,10 +9178,17 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-qs@^6.11.2, qs@^6.9.4:
+qs@^6.11.2:
   version "6.12.0"
   resolved "http://localhost:4873/qs/-/qs-6.12.0.tgz#edd40c3b823995946a8a0b1f208669c7a200db77"
   integrity sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==
+  dependencies:
+    side-channel "^1.0.6"
+
+qs@^6.12.3:
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.13.1.tgz#3ce5fc72bd3a8171b85c99b93c65dd20b7d1b16e"
+  integrity sha512-EJPeIn0CYrGu+hli1xilKAPXODtJ12T0sP63Ijx2/khC2JtuaN3JyNIpvmnkmaEtha9ocbG4A4cMcr+TvqvwQg==
   dependencies:
     side-channel "^1.0.6"
 
@@ -10640,6 +10679,11 @@ type-fest@^0.8.0:
   version "0.8.1"
   resolved "http://localhost:4873/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
+
+type-fest@^4.0.0:
+  version "4.30.2"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.30.2.tgz#d94429edde1f7deacf554741650aab394197a4cc"
+  integrity sha512-UJShLPYi1aWqCdq9HycOL/gwsuqda1OISdBO3t8RlXQC4QvtuIz4b5FCfe2dQIWEpmlRExKmcTBfP1r9bhY7ig==
 
 type-is@^1.6.4, type-is@~1.6.18:
   version "1.6.18"
