@@ -4,8 +4,7 @@
     "config:recommended"
   ],
   "baseBranches": [
-    "main",
-    "cma"
+    "main"
   ],
   "packageRules": [
     {
