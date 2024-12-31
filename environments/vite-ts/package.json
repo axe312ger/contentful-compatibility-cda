@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "npm run build && WAIT_ON_TIMEOUT=600000 start-server-and-test preview http://localhost:4173 test:execute",
+    "test": "npm run build && start-server-and-test preview http://localhost:4173 test:execute",
     "test:execute": "node test.js"
   },
   "devDependencies": {
