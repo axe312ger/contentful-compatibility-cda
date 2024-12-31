@@ -5543,9 +5543,9 @@
     import-meta-resolve "^4.1.0"
 
 "@sveltejs/kit@^2.0.0":
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.12.1.tgz#a9da8ef9461598279c0dc9f2ba4a70232e91a758"
-  integrity sha512-M3rPijGImeOkI0DBJSwjqz+YFX2DyOf6NzWgHVk3mqpT06dlYCpcv5xh1q4rYEqB58yQlk4QA1Y35PUqnUiFKw==
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.15.1.tgz#66260c6175c5783138f4e43c5f14bd9cec28b914"
+  integrity sha512-8t7D3hQHbUDMiaQ2RVnjJJ/+Ur4Fn/tkeySJCsHtX346Q9cp3LAnav8xXdfuqYNJwpUGX0x3BqF1uvbmXQw93A==
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
