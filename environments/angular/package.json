@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "npm run build && start-server-and-test start http://localhost:4200 test:execute",
+    "test": "npm run build && WAIT_ON_TIMEOUT=600000 start-server-and-test start http://localhost:4200 test:execute",
     "test:execute": "node test.js",
     "serve:ssr:angular": "node dist/angular/server/server.mjs"
   },
