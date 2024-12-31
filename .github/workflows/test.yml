@@ -11,7 +11,7 @@ on:
       - cma
 
 jobs:
-  install-for-caching:
+  install-for-yarn-cache:
     runs-on: self-hosted
     steps:
       - name: Checkout code
@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
   run-tests:
-    needs: install-for-caching
+    needs: install-for-yarn-cache
     runs-on: self-hosted
     strategy:
       max-parallel: 20
