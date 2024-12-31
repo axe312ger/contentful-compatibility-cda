@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "test": "npm run build && start-server-and-test preview http://localhost:4173 test:execute",
+    "test": "npm run build && start-server-and-test preview http-get://localhost:4173 test:execute",
     "test:execute": "node test.js"
   },
   "devDependencies": {
