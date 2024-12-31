@@ -8009,9 +8009,9 @@ browserslist@^4.0.0, browserslist@^4.18.1, browserslist@^4.21.10, browserslist@^
     update-browserslist-db "^1.1.1"
 
 browserstack-local@^1.5.3, browserstack-local@^1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/browserstack-local/-/browserstack-local-1.5.5.tgz#f36b625f3b8bfd053f673d85fd1082f2d0759693"
-  integrity sha512-jKne7yosrMcptj3hqxp36TP9k0ZW2sCqhyurX24rUL4G3eT7OLgv+CSQN8iq5dtkv5IK+g+v8fWvsiC/S9KxMg==
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/browserstack-local/-/browserstack-local-1.5.6.tgz#da639f0f4203df9f46efd9935b2239b223991139"
+  integrity sha512-s0GadAkyE1XHxnmymb9atogTZbA654bcFpqGkcYEtYPaPvuvVfSXR0gw8ojn0I0Td2HEMJcGtdrkBjb1Fi/HmQ==
   dependencies:
     agent-base "^6.0.2"
     https-proxy-agent "^5.0.1"
@@ -8019,10 +8019,10 @@ browserstack-local@^1.5.3, browserstack-local@^1.5.5:
     ps-tree "=1.2.0"
     temp-fs "^0.9.9"
 
-browserstack-node-sdk@1.34.29:
-  version "1.34.29"
-  resolved "https://registry.yarnpkg.com/browserstack-node-sdk/-/browserstack-node-sdk-1.34.29.tgz#2128e2e74f8224398a572efbf7bee9ce05fd783b"
-  integrity sha512-f0rpHfDkmKPMRaxnBcB3U1wc4Wr66nHfbSVXRmRvnZbunNGc90SKFnxoYY96AFiWjIlO+mgd2UoTE/BnLRwkjg==
+browserstack-node-sdk@1.34.31:
+  version "1.34.31"
+  resolved "https://registry.yarnpkg.com/browserstack-node-sdk/-/browserstack-node-sdk-1.34.31.tgz#8a7eb72298598a38bbcff6830e5f62dc5f8d9043"
+  integrity sha512-Y4oHzGTz0lxYl27U4asRkj9Zz5t2izyhRCdgfOoYwNOcHq+mEyIzLYYGMSxlU4/ql6wlMd2iAPU3p32C3BBdSg==
   dependencies:
     "@google-cloud/compute" "^4.0.1"
     "@google-cloud/container" "^5.2.0"
