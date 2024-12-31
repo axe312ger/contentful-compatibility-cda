@@ -1,92 +1,55 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "baseBranches": [
-    "main"
-  ],
+  "extends": ["config:recommended"],
+  "baseBranches": ["main"],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "gatsby",
-        "gatsby-*"
-      ],
-      "groupName": "gatsby ecosystem"
+      "matchFileNames": ["angular/**"],
+      "groupName": "angular environment"
     },
     {
-      "matchPackageNames": [
-        "@angular/*",
-        "rxjs",
-        "zone.js"
-      ],
-      "groupName": "angular ecosystem"
+      "matchFileNames": ["gatsbyjs/**"],
+      "groupName": "gatsby environment"
     },
     {
-      "matchPackageNames": [
-        "react",
-        "react-dom",
-        "react-native",
-        "expo",
-        "@react-native-*",
-        "@expo/*"
-      ],
-      "matchFileNames": ["environments/react-native-expo/**"],
-      "groupName": "react native ecosystem"
+      "matchFileNames": ["nextjs/**", "nextjs-ts/**"],
+      "groupName": "next.js environments"
     },
     {
-      "matchPackageNames": [
-        "vite",
-        "vite-plugin-*",
-        "@vitejs/*"
-      ],
-      "groupName": "vite ecosystem"
+      "matchFileNames": ["nuxt/**"],
+      "groupName": "nuxt environment"
     },
     {
-      "matchPackageNames": [
-        "next",
-        "next-*"
-      ],
-      "groupName": "next.js ecosystem"
+      "matchFileNames": ["react-native-expo/**"],
+      "groupName": "react native expo environment"
     },
     {
-      "matchPackageNames": [
-        "nuxt",
-        "nuxt-*"
-      ],
-      "matchFileNames": ["environments/react-native-expo/**"],
-      "groupName": "nuxt ecosystem"
+      "matchFileNames": ["rollup/**"],
+      "groupName": "rollup environment"
     },
     {
-      "matchPackageNames": [
-        "svelte",
-        "svelte-*"
-      ],
-      "groupName": "svelte ecosystem"
+      "matchFileNames": ["svelte/**"],
+      "groupName": "svelte environment"
     },
     {
-      "matchPackageNames": [
-        "rollup",
-        "rollup-plugin-*",
-        "@rollup/*"
-      ],
-      "matchFileNames": ["environments/rollup/**"],
-      "groupName": "rollup ecosystem"
+      "matchFileNames": ["vite/**", "vite-ts/**"],
+      "groupName": "vite environments"
     },
     {
-      "matchPackageNames": [
-        "webpack",
-        "webpack-*",
-        "@webpack/*"
-      ],
-      "matchFileNames": ["environments/webpack/**"],
-      "groupName": "webpack ecosystem"
+      "matchFileNames": ["webpack/**"],
+      "groupName": "webpack environment"
     },
     {
-      "matchPackageNames": [
-        "@types/*"
-      ],
-      "groupName": "typescript types"
+      "matchFileNames": ["node-cjs/**", "node-mjs/**"],
+      "groupName": "node environments"
+    },
+    {
+      "matchFileNames": ["node-ts-cjs/**", "node-ts-mjs/**"],
+      "groupName": "node TS environments"
+    },
+    {
+      "matchFileNames": ["browser-1/**", "browser-2/**", "browser-3/**"],
+      "groupName": "browser environments"
     }
   ],
   "separateMinorPatch": true,
