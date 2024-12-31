@@ -12,7 +12,7 @@
   "devDependencies": {
     "serve": "^14.2.3",
     "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^6.0.0"
   },
   "dependencies": {
     "contentful": "^11.2.5"
