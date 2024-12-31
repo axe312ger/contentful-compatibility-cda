@@ -11,21 +11,8 @@ on:
       - cma
 
 jobs:
-  check-self-hosted:
-    runs-on: self-hosted
-    outputs:
-      use-self-hosted: ${{ steps.check.outputs.useSelfHosted }}
-    steps:
-      - name: Check self-hosted runner availability
-        id: check
-        run: |
-          if curl -s --head --request GET http://self-hosted-runner-endpoint/health | grep "200 OK"; then
-            echo "useSelfHosted=true" >> $GITHUB_OUTPUT
-          else
-            echo "useSelfHosted=false" >> $GITHUB_OUTPUT
   run-tests:
-    needs: check-self-hosted
-    runs-on: ${{ needs.check-self-hosted.outputs.use-self-hosted == 'true' && 'self-hosted' || 'ubuntu-latest' }}
+    runs-on: self-hosted
     strategy:
       matrix:
         include:
