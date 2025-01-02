@@ -4,6 +4,10 @@
   "baseBranches": ["main"],
   "packageRules": [
     {
+      "matchDepNames": ["node", "@types/node"],
+      "groupName": "node dependencies"
+    },
+    {
       "matchFileNames": ["environments/angular/**"],
       "groupName": "angular environment"
     },
