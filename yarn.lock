@@ -5547,10 +5547,15 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.28.1.tgz#b83001b5abed2bcb5e2dbeec6a7e69b194235c1e"
   integrity sha512-fzgeABz7rrAlKYB0y2kSEiURrI0691CSL0+KXwKwhxvj92VULEDQLpBYLHpF49MSiPG4sq5CK3qHMnb9tlCjBw==
 
-"@rollup/rollup-linux-x64-gnu@4.29.1", "@rollup/rollup-linux-x64-gnu@^4.18.0":
+"@rollup/rollup-linux-x64-gnu@4.29.1":
   version "4.29.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.29.1.tgz#f4c95b26f4ad69ebdb64b42f0ae4da2a0f617958"
   integrity sha512-87xYCwb0cPGZFoGiErT1eDcssByaLX4fc0z2nRM6eMtV9njAfEE6OW3UniAoDhX4Iq5xQVpE6qO9aJbCFumKYQ==
+
+"@rollup/rollup-linux-x64-gnu@^4.18.0":
+  version "4.30.1"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.30.1.tgz#183637d91456877cb83d0a0315eb4788573aa588"
+  integrity sha512-UtgGb7QGgXDIO+tqqJ5oZRGHsDLO8SlpE4MhqpY9Llpzi5rJMvrK6ZGhsRCST2abZdBqIBeXW6WPD5fGK5SDwg==
 
 "@rollup/rollup-linux-x64-musl@4.28.1":
   version "4.28.1"
@@ -5751,9 +5756,9 @@
     import-meta-resolve "^4.1.0"
 
 "@sveltejs/kit@^2.0.0":
-  version "2.15.1"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.15.1.tgz#66260c6175c5783138f4e43c5f14bd9cec28b914"
-  integrity sha512-8t7D3hQHbUDMiaQ2RVnjJJ/+Ur4Fn/tkeySJCsHtX346Q9cp3LAnav8xXdfuqYNJwpUGX0x3BqF1uvbmXQw93A==
+  version "2.15.2"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.15.2.tgz#a6e9357856089da5233bdbf03e8d4cb7483a0c49"
+  integrity sha512-p208T1kdM6zd8k4YXIUM60pLWQ8dZqehXSiqn4NulXHyHibX53uIAL2xtNL8GjxX2IVPqPRT978MwVYhCKExdQ==
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
@@ -9268,9 +9273,9 @@ contentful-sdk-core@^9.0.1:
     "@rollup/rollup-linux-x64-gnu" "^4.18.0"
 
 contentful@^11.2.5, contentful@^11.3.1:
-  version "11.4.0"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-11.4.0.tgz#367469ec09aad6283ef1d67e21b0c898c4bc8d53"
-  integrity sha512-4OfyXogyKcM48WfAYMekalT3vt5nP1oWaSOF/fJveYCPu0uXTZ7njKPYUt88lvOl+CSCEEJ6immf/o2YT0Z4Fg==
+  version "11.4.2"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-11.4.2.tgz#88c344318372d42894bdf9c694ccb380cbca170e"
+  integrity sha512-FufJ44gubPRxOc1ciF2xaCnnIONaeTpXbLj1cLCXtSCGS9GWg0AetG2XouRT1nSEWq6Fc/1cPn9ZY3n30BdwCA==
   dependencies:
     "@contentful/content-source-maps" "^0.11.7"
     "@contentful/rich-text-types" "^16.6.1"
@@ -10339,7 +10344,7 @@ dotenv@^8.6.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
-dunder-proto@^1.0.0:
+dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/dunder-proto/-/dunder-proto-1.0.1.tgz#d7ae667e1dc83482f8b70fd0f6eefc50da30f58a"
   integrity sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==
@@ -12600,7 +12605,7 @@ get-intrinsic@^1.2.1, get-intrinsic@^1.2.3:
     has-symbols "^1.1.0"
     hasown "^2.0.2"
 
-get-intrinsic@^1.2.4, get-intrinsic@^1.2.5, get-intrinsic@^1.2.6:
+get-intrinsic@^1.2.4:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.2.6.tgz#43dd3dd0e7b49b82b2dfcad10dc824bf7fc265d5"
   integrity sha512-qxsEs+9A+u85HhllWJJFicJfPDhRmjzoYdl64aMWW9yRIJmSyxdn8IEkuIM530/7T+lv0TIHd8L6Q/ra0tEoeA==
@@ -12615,6 +12620,22 @@ get-intrinsic@^1.2.4, get-intrinsic@^1.2.5, get-intrinsic@^1.2.6:
     has-symbols "^1.1.0"
     hasown "^2.0.2"
     math-intrinsics "^1.0.0"
+
+get-intrinsic@^1.2.5, get-intrinsic@^1.2.6:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.2.7.tgz#dcfcb33d3272e15f445d15124bc0a216189b9044"
+  integrity sha512-VW6Pxhsrk0KAOqs3WEd0klDiF/+V7gQOpAvY1jVU/LHmaD/kQO4523aiJuikX/QAKYiW6x8Jh+RJej1almdtCA==
+  dependencies:
+    call-bind-apply-helpers "^1.0.1"
+    es-define-property "^1.0.1"
+    es-errors "^1.3.0"
+    es-object-atoms "^1.0.0"
+    function-bind "^1.1.2"
+    get-proto "^1.0.0"
+    gopd "^1.2.0"
+    has-symbols "^1.1.0"
+    hasown "^2.0.2"
+    math-intrinsics "^1.1.0"
 
 get-package-type@^0.1.0:
   version "0.1.0"
@@ -12635,6 +12656,14 @@ get-port@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-4.2.0.tgz#e37368b1e863b7629c43c5a323625f95cf24b119"
   integrity sha512-/b3jarXkH8KJoOMQc3uVGHASwGLPq3gSFJ7tgJm2diza+bydJPTGOibin2steecKeOylE8oY2JERlVWkAJO6yw==
+
+get-proto@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-proto/-/get-proto-1.0.1.tgz#150b3f2743869ef3e851ec0c49d15b1d14d00ee1"
+  integrity sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==
+  dependencies:
+    dunder-proto "^1.0.1"
+    es-object-atoms "^1.0.0"
 
 get-stream@^4.0.0:
   version "4.1.0"
@@ -16123,7 +16152,7 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
-math-intrinsics@^1.0.0:
+math-intrinsics@^1.0.0, math-intrinsics@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/math-intrinsics/-/math-intrinsics-1.1.0.tgz#a0dd74be81e2aa5c2f27e65ce283605ee4e2b7f9"
   integrity sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==
@@ -22308,9 +22337,9 @@ type-fest@^2.13.0:
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
 
 type-fest@^4.0.0:
-  version "4.31.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.31.0.tgz#a3de630c96eb77c281b6ba2affa5dae5fb3c326c"
-  integrity sha512-yCxltHW07Nkhv/1F6wWBr8kz+5BGMfP+RbRSYFnegVb0qV/UMT0G0ElBloPVerqn4M2ZV80Ir1FtCcYv1cT6vQ==
+  version "4.32.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.32.0.tgz#55bacdd6f2cf1392b7e9cde894e9b1d726807e97"
+  integrity sha512-rfgpoi08xagF3JSdtJlCwMq9DGNDE0IMh3Mkpc1wUypg9vPi786AiqeBBKcqvIkq42azsBM85N490fyZjeUftw==
 
 type-fest@^4.18.2, type-fest@^4.7.1:
   version "4.30.0"
@@ -22403,9 +22432,9 @@ typescript@5.4.5:
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
 typescript@^5, typescript@^5.0.0, typescript@^5.0.3, typescript@^5.2.2, typescript@^5.3.3:
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.2.tgz#3169cf8c4c8a828cde53ba9ecb3d2b1d5dd67be6"
-  integrity sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
+  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
 
 ua-parser-js@^0.7.30:
   version "0.7.39"
