@@ -15,7 +15,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
@@ -56,7 +56,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
