@@ -12,14 +12,14 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "gatsby-transformer-sqip": "^5.13.1",
     "modern-normalize": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.0.0",
     "srcset": "^5.0.0",
-    "typescript": "^5.3.3"
+    "typescript": "^7.0.0"
   },
   "keywords": [
     "gatsby"
