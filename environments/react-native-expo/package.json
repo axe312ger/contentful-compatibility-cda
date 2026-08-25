@@ -13,19 +13,19 @@
     "test:execute": "node test.js"
   },
   "dependencies": {
-    "@expo/metro-runtime": "~4.0.0",
-    "expo": "~52.0.0",
-    "expo-status-bar": "~2.0.0",
+    "@expo/metro-runtime": "~57.0.0",
+    "expo": "~57.0.0",
+    "expo-status-bar": "~57.0.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.76.5",
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^8.0.0",
     "selenium-webdriver": "^4.20.0",
     "serve": "^14.2.3",
-    "start-server-and-test": "^2.0.3"
+    "start-server-and-test": "^3.0.0"
   },
   "private": true
 }
