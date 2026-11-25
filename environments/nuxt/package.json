@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "contentful": "^11.3.1",
-    "nuxt": "^3.14.1592",
+    "nuxt": "^4.0.0",
     "vite": "^5.4.11",
     "vue": "latest",
     "vue-router": "latest"
